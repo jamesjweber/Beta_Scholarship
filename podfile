@@ -1,0 +1,26 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.2'
+use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target 'Beta_Scholarship' do
+    pod 'AWSCognitoIdentityProvider'
+    pod 'AWSDynamoDB'
+    pod 'AWSPinpoint'
+    pod 'AWSS3'
+    pod 'IQKeyboardManagerSwift'
+    pod 'SWRevealViewController'
+    pod 'GooglePlacePicker'
+    pod 'Google/CloudMessaging'
+    pod 'Google/Analytics'
+    pod 'GoogleSignIn'
+    pod 'GoogleAPIClientForREST/Calendar'
+    pod 'GooglePlacePicker'
+    pod 'EPSignature'
+    pod 'DeviceKit'
+    pod 'MKRingProgressView'
+    pod 'NVActivityIndicatorView'
+end

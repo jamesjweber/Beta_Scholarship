@@ -1,0 +1,6 @@
+framework module Pods_Beta_Scholarship {
+  umbrella header "Pods-Beta_Scholarship-umbrella.h"
+
+  export *
+  module * { export * }
+}

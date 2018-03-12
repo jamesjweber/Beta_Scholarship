@@ -1,0 +1,135 @@
+PODS:
+  - AWSCognitoIdentityProvider (2.6.13):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.13)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.13)
+  - AWSDynamoDB (2.6.13):
+    - AWSCore (= 2.6.13)
+  - AWSPinpoint (2.6.13):
+    - AWSCore (= 2.6.13)
+  - AWSS3 (2.6.13):
+    - AWSCore (= 2.6.13)
+  - DeviceKit (1.5.0)
+  - EPSignature (1.0.4)
+  - GGLInstanceID (1.2.1)
+  - Google/Analytics (2.0.4):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/CloudMessaging (2.0.4):
+    - GGLInstanceID (~> 1.0)
+    - Google/Core
+    - GoogleCloudMessaging (~> 1.0)
+  - Google/Core (2.0.4):
+    - GoogleInterchangeUtilities (~> 1.0)
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.1)
+  - GoogleAnalytics (3.17.0)
+  - GoogleAPIClientForREST/Calendar (1.3.2):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Core (1.3.2):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleCloudMessaging (1.2.0):
+    - GoogleInterchangeUtilities (~> 1.0)
+    - GoogleIPhoneUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleIPhoneUtilities (1.2.1):
+    - GoogleSymbolUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.0)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GoogleNetworkingUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GooglePlacePicker (2.6.0):
+    - GoogleMaps (= 2.6.0)
+    - GooglePlaces (= 2.6.0)
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
+  - GoogleSignIn (4.1.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/DebugUtils (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
+  - GoogleUtilities (1.3.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.14):
+    - GTMSessionFetcher/Full (= 1.1.14)
+  - GTMSessionFetcher/Core (1.1.14)
+  - GTMSessionFetcher/Full (1.1.14):
+    - GTMSessionFetcher/Core (= 1.1.14)
+  - IQKeyboardManagerSwift (5.0.8)
+  - MKRingProgressView (1.2)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - SWRevealViewController (2.3.0)
+
+DEPENDENCIES:
+  - AWSCognitoIdentityProvider
+  - AWSDynamoDB
+  - AWSPinpoint
+  - AWSS3
+  - DeviceKit
+  - EPSignature
+  - Google/Analytics
+  - Google/CloudMessaging
+  - GoogleAPIClientForREST/Calendar
+  - GooglePlacePicker
+  - GoogleSignIn
+  - IQKeyboardManagerSwift
+  - MKRingProgressView
+  - NVActivityIndicatorView
+  - SWRevealViewController
+
+SPEC CHECKSUMS:
+  AWSCognitoIdentityProvider: c532434167c99ec42126447a83c6a2f2ea18f678
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 5da797bc476188fdaf00dec134fa18d84708eca9
+  AWSDynamoDB: 36abff7ce93fcadad2c4dc6f729d8716c933adf2
+  AWSPinpoint: 47b0351d0adb0e12681da4ac9fe19f2690d6c713
+  AWSS3: 7c178c82c2e648559b7075a663335055327dd4f5
+  DeviceKit: 883552d64028056216e913a88f892e7e29678e75
+  EPSignature: a56bf2c41abc165bf2d0efb955b1c05dcabdcfa3
+  GGLInstanceID: 4a317044f744281b82cd03015f379899f277cad3
+  Google: d536877ec602555b755cc28ce6fed104825c693c
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleAPIClientForREST: 4fa84fc61fdeea48dd7088de5c1a864ace18125b
+  GoogleCloudMessaging: f37ea14dd0f41d4d889c10b5559dd35bbfd9ac26
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleIPhoneUtilities: 63f25e93a3ddcb66884d182aab3a660d98f1479b
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GoogleNetworkingUtilities: 3edd3a8161347494f2da60ea0deddc8a472d94cb
+  GooglePlacePicker: e4488625effb006f59de49e14b7a603e463e4261
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  MKRingProgressView: 023e2241d1ef23b05cb9893aa4878395861e3902
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+
+PODFILE CHECKSUM: abdcd5ae5fe0e89a061a71fd4dc4084ab9d803aa
+
+COCOAPODS: 1.4.0
