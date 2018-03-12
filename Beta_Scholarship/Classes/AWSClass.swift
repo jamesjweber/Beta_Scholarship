@@ -60,27 +60,28 @@ class userInformation {
     init(_ response: AWSCognitoIdentityUserGetDetailsResponse) {
         for attribute in response.userAttributes! {
             print("\(attribute.name!): \(attribute.value!)")
-            sub = attribute.name! == "sub" ? attribute.value! : String()
-            house_positions = attribute.name! == "custom:house_positions" ? attribute.value! : String()
-            address = attribute.name! == "address" ? attribute.value! : String()
-            birthdate = attribute.name! == "birthdate" ? attribute.value! : String()
-            year = attribute.name! == "custom:year" ? attribute.value! : String()
-            email_verified = attribute.name! == "email_verified" ? Bool(attribute.value!) : Bool()
-            brother_status = attribute.name! == "custom:brother_status" ? attribute.value! : String()
-            contact_email = attribute.name! == "custom:contact_email" ? attribute.value! : String()
-            phone_number_verified = attribute.name! == "phone_number_verified" ? Bool(attribute.value!) : Bool()
-            given_name = attribute.name! == "given_name" ? attribute.value! : String()
-            probo_level = attribute.name! == "custom:probo_level" ? Int(attribute.value!) : Int()
-            pin_number = attribute.name! == "custom:pin_number" ? Int(attribute.value!) : Int()
-            major = attribute.name! == "custom:major" ? attribute.value! : String()
-            profile_pic_url = attribute.name! == "custom:profile_pic_url" ? URL(fileURLWithPath: attribute.value!) : URL(fileURLWithPath: String())
-            phone_number = attribute.name! == "phone_number" ? attribute.value! : String()
-            family_name = attribute.name! == "family_name" ? attribute.value! : String()
-            email = attribute.name! == "email" ? attribute.value! : String()
+            if ( attribute.name! == "sub" ) { sub = attribute.value! }
+            if ( attribute.name! == "custom:house_positions" ) { house_positions = attribute.value! }
+            if ( attribute.name! == "address" ) { address = attribute.value! }
+            if ( attribute.name! == "birthdate" ) { birthdate = attribute.value! }
+            if ( attribute.name! == "custom:year" ) { year = attribute.value! }
+            if ( attribute.name! == "email_verified" ) { email_verified = Bool(attribute.value!) }
+            if ( attribute.name! == "custom:brother_status" ) { brother_status = attribute.value! }
+            if ( attribute.name! == "custom:contact_email" ) { contact_email =  attribute.value! }
+            if ( attribute.name! == "phone_number_verified" ) { phone_number_verified =  Bool(attribute.value!) }
+            if ( attribute.name! == "given_name" ) { given_name = attribute.value! }
+            if ( attribute.name! == "custom:probo_level" ) { probo_level =  Int(attribute.value!) }
+            if ( attribute.name! == "custom:pin_number" ) { pin_number = Int(attribute.value!) }
+            if ( attribute.name! == "custom:major" ) { major = attribute.value! }
+            if ( attribute.name! == "custom:profile_pic_url" ) { profile_pic_url = URL(fileURLWithPath: attribute.value!) }
+            if ( attribute.name! == "phone_number" ) { phone_number = attribute.value! }
+            if ( attribute.name! == "family_name" ) { family_name = attribute.value! }
+            if ( attribute.name! == "email" ) { email = attribute.value! }
+            if self.given_name != nil && self.family_name != nil {
+                fullName = "\(given_name!) \(family_name!)"
+                print("full name: \(fullName!)")
+            }
         }
-        print("givenName: \(given_name!)")
-        print("familyName: \(family_name!)")
-        fullName = String(given_name! + family_name!)
     }
     
     init() {

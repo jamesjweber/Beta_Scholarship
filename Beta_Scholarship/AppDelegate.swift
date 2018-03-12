@@ -26,10 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var navigationController: UINavigationController?
     var storyboard: UIStoryboard?
     var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
-    
-    var user: AWSCognitoIdentityUser?
-    var pool: AWSCognitoIdentityUserPool?
-    var response: AWSCognitoIdentityUserGetDetailsResponse?
 
     var pinpoint: AWSPinpoint?
 
@@ -85,18 +81,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // initialize user pool client
         AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: poolConfiguration, forKey: AWSCognitoUserPoolsSignInProviderKey)
 
-        // S3 Intializations
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1, identityPoolId:"us-east-1:bb023064-cbc1-40da-8cfc-84cc04d5485f")
-        let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
-        AWSServiceManager.default().defaultServiceConfiguration = configuration
-        
-        self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
-        if (self.user == nil) {
-            self.user = self.pool?.currentUser()
-        }
-
-        refresh()
-
         // fetch the user pool client we initialized in above step
         let pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
         self.storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -119,15 +103,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                                                  annotation: annotation)
     }
     
-    func refresh(completionHandler:) {
-        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
-            DispatchQueue.main.async(execute: {
-                self.response = task.result
-            })
-            return nil
-        }
-    }
-
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
               withError error: Error!) {
         if let error = error {

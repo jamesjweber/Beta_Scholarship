@@ -25,6 +25,7 @@
 		19D694471FFE039700D671CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D694451FFE039700D671CF /* Main.storyboard */; };
 		19D6944A1FFE039700D671CF /* Beta_Scholarship.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19D694481FFE039700D671CF /* Beta_Scholarship.xcdatamodeld */; };
 		19D6944F1FFE039700D671CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D6944D1FFE039700D671CF /* LaunchScreen.storyboard */; };
+		19DA69AB20565760007331E8 /* MyHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA69AA20565760007331E8 /* MyHoursViewController.swift */; };
 		19ED92CC204BE06D003F48E4 /* RoundedButtonProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED92CB204BE06D003F48E4 /* RoundedButtonProperties.swift */; };
 		19EDBE9D204137C700459F74 /* YearAndMajorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EDBE9C204137C700459F74 /* YearAndMajorViewController.swift */; };
 		390602728945C76F0A31EE51 /* ProboLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390604D25182B3764DAA852C /* ProboLevelViewController.swift */; };
@@ -57,6 +58,7 @@
 		19D694491FFE039700D671CF /* Beta_Scholarship.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beta_Scholarship.xcdatamodel; sourceTree = "<group>"; };
 		19D6944E1FFE039700D671CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D694501FFE039700D671CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DA69AA20565760007331E8 /* MyHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoursViewController.swift; sourceTree = "<group>"; };
 		19ED92CB204BE06D003F48E4 /* RoundedButtonProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonProperties.swift; sourceTree = "<group>"; };
 		19EDBE9C204137C700459F74 /* YearAndMajorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearAndMajorViewController.swift; sourceTree = "<group>"; };
 		3906014ABF7817C7DE762233 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				1923EEBD204538F60098C79C /* StudyHoursViewController.swift */,
 				19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */,
 				199D0A132050F9B000422988 /* GoogleSignInViewController.swift */,
+				19DA69AA20565760007331E8 /* MyHoursViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				199D0A142050F9B000422988 /* GoogleSignInViewController.swift in Sources */,
 				19D6944A1FFE039700D671CF /* Beta_Scholarship.xcdatamodeld in Sources */,
+				19DA69AB20565760007331E8 /* MyHoursViewController.swift in Sources */,
 				196B6F4F20468DA900341AF4 /* Colors.swift in Sources */,
 				19D694421FFE039700D671CF /* AppDelegate.swift in Sources */,
 				19AFA5B7203E7EC5004C6BF6 /* ForgotPasswordViewController.swift in Sources */,

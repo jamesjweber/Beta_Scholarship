@@ -33,9 +33,12 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     var locationSet: Bool!
     
     var credentialsProvider: AWSCognitoCredentialsProvider?
+    var user: AWSCognitoIdentityUser?
+    var pool: AWSCognitoIdentityUserPool?
+    var response: AWSCognitoIdentityUserGetDetailsResponse?
     var name: String!
     
-    var userInfo: userInformation = userInformation()
+    var userInfo: userInformation?
     var userHours = [studyHours]()
     
     var semesterHours: Double = 0
@@ -51,32 +54,112 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
 
         super.viewDidLoad()
         
+        // S3 Intializations
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1, identityPoolId:"us-east-1:bb023064-cbc1-40da-8cfc-84cc04d5485f")
+        let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
+        self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
+        if (self.user == nil) {
+            self.user = self.pool?.currentUser()
+        }
+        
         configureButton(button: studyLogButton, view: self)
         configureButton(button: startStudyingButton, view: self)
-    }
-    
-    func setName() {
-        
-        print("userInfo: \(userInfo.fullName!)")
-        
-        name = "Corey Wogenstahl"
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        resetRings()
+        refresh()
         
-        getUserInfoAndHours()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.updateRings(proboLevel: self.userInfo.probo_level ?? 0, userHours: self.userHours)
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func refresh() {
+        self.resetRings()
+        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
+            DispatchQueue.main.async(execute: {
+                self.response = task.result
+                if let response = self.response {
+                    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+                    //
+                    // This section will get the user's info and save it in a local cache to save
+                    // loading time. The user's info requires that self.response be fully loaded from
+                    // task.result before it can get user info.
+                    //
+                    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+                    if let cachedUserInfo = self.cache.object(forKey: "CachedObject") {
+                        // use the cached version
+                        print("getting cached userinfo")
+                        self.userInfo = cachedUserInfo
+                    } else {
+                        // create it from scratch then store in the cache
+                        print("cacheing")
+                        self.userInfo = userInformation(self.response!)
+                        self.cache.setObject(self.userInfo!, forKey: "CachedObject")
+                    }
+                    
+                    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+                    //
+                    // This section queries our DynamoDB table, which contains all of the hours for
+                    // the users. It will specifically query the hours for the given user for this
+                    // semester. It wil automatically update, so if I manually change someone's
+                    // hours it will remove the previous hours, and will add the correct hours to
+                    // their hours.
+                    //
+                    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+                    
+                    let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+                    let queryExpression = AWSDynamoDBQueryExpression()
+                    queryExpression.indexName = "NameOfUser"
+                    queryExpression.keyConditionExpression = "NameOfUser = :name AND Week <= :week" // test
+                    queryExpression.expressionAttributeValues = [":name" : self.userInfo?.fullName! as Any, ":week" : 16]
+                    
+                    dynamoDBObjectMapper.query(studyHours.self, expression: queryExpression).continueWith(block: { (task:AWSTask<AWSDynamoDBPaginatedOutput>!) -> Any? in
+                        if let error = task.error as NSError? {
+                            print("The request failed. Error: \(error)")
+                        } else if let paginatedOutput = task.result {
+                            //print("before for")
+                            for item in paginatedOutput.items as! [studyHours] {
+                                //print("item: \(item)")
+                                if (!self.userHours.contains(item)) {
+                                    //print("Date: \(item.Date_And_Time!) :\(item.Hours!)")
+                                    
+                                    for ind in 0..<self.userHours.count {
+                                        if(self.userHours[ind].Date_And_Time == item.Date_And_Time) {
+                                            self.userHours.remove(at: ind)
+                                            print("Removed!")
+                                        }
+                                    }
+                                    self.userHours.append(item)
+                                }
+                                
+                                // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+                                //
+                                // The rings are subsequently updated given the users probation level (which will
+                                // give us an idea of how many hours they need to reach for the week), and given
+                                // the actual hours the user has studied for that day/week/semester. These hours
+                                // are calculated from the userHours variable.
+                                //
+                                // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+                                
+                                self.updateRings(proboLevel: self.userInfo?.probo_level ?? 0, userHours: self.userHours)
+                            }
+                        }
+                        return nil
+                    })
+                    
+                } else {
+                    print("Error getting response")
+                }
+            })
+            return nil
+        }
     }
 
     func loadDefaults() {
@@ -91,66 +174,6 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         hoursForDay.text! = "00"
         hoursForWeek.text! = "00"
         hoursForSemester.text! = "00"
-    }
-    
-    func getUserInfoAndHours() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        self.userInfo = userInformation()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            guard let response = appDelegate.response else {
-                return
-            }
-            
-            if let cachedUserInfo = self.cache.object(forKey: "CachedObject") {
-                // use the cached version
-                print("getting cached userinfo")
-                self.userInfo = cachedUserInfo
-            } else {
-                // create it from scratch then store in the cache
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    print("cacheing")
-                    self.userInfo = userInformation(response)
-                    print("first name:: \(self.userInfo.given_name!)")
-                    self.cache.setObject(self.userInfo, forKey: "CachedObject")
-                }
-            }
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.setName()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
-                let queryExpression = AWSDynamoDBQueryExpression()
-                queryExpression.indexName = "NameOfUser"
-                queryExpression.keyConditionExpression = "NameOfUser = :name AND Week <= :week" // test
-                queryExpression.expressionAttributeValues = [":name" : self.name!, ":week" : 16]
-                
-                dynamoDBObjectMapper.query(studyHours.self, expression: queryExpression).continueWith(block: { (task:AWSTask<AWSDynamoDBPaginatedOutput>!) -> Any? in
-                    if let error = task.error as NSError? {
-                        print("The request failed. Error: \(error)")
-                    } else if let paginatedOutput = task.result {
-                        //print("before for")
-                        for item in paginatedOutput.items as! [studyHours] {
-                            //print("item: \(item)")
-                            if (!self.userHours.contains(item)) {
-                                //print("Date: \(item.Date_And_Time!) :\(item.Hours!)")
-                                
-                                for ind in 0..<self.userHours.count {
-                                    if(self.userHours[ind].Date_And_Time == item.Date_And_Time) {
-                                        self.userHours.remove(at: ind)
-                                        print("Removed!")
-                                    }
-                                }
-                                self.userHours.append(item)
-                            }
-                            
-                        }
-                    }
-                    return nil
-                })
-            }
-        }
     }
     
     func updateRings(proboLevel: Int, userHours: [studyHours]) {
@@ -197,18 +220,6 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         var weekHours:Double = 0
         var dayHours:Double = 0
         
-        if userHours == nil {
-            return (0.0001, 0.0001, 0.0001)
-        }
-        
-        /*print("week hours: \(weekHours)")
-        if weekHours > 0 || dayHours > 0 || semesterHours > 0 {
-            weekHours = 0
-            print("week hours:: \(weekHours)")
-            dayHours = 0
-            semesterHours = 0
-        } */
-            
         let cal = Calendar.current
         let day:Int = cal.ordinality(of: .day, in: .year, for: Date())!
         let currentWeek = (day/7 - 1)
@@ -220,142 +231,17 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         
         for log in userHours {
             semesterHours += (log.Hours?.doubleValue)!
-            print("is \((log.Week?.intValue)!) == \(currentWeek)?")
             if (log.Week?.intValue)! == currentWeek {
                 weekHours += (log.Hours?.doubleValue)!
-                print("date: \(date)")
-                
                 if(date == log.Date_And_Time![0...7]) {
                     dayHours += (log.Hours?.doubleValue)!
                 }
             }
         }
         
-        
-        
-        
-        print("week hours::: \(weekHours)")
         return (weekHours,dayHours,semesterHours)
     }
     
-    /*class rings {
-        let shapeLayer = CAShapeLayer()
-        let trackLayer = CAShapeLayer()
-
-        init(center: CGPoint, radius: Int, ringWidth: CGFloat, color: UIColor, percentage: Double) {
-            let circularPath = UIBezierPath(arcCenter: center, radius: CGFloat(radius), startAngle: -CGFloat.pi/2, endAngle: 2*CGFloat.pi, clockwise: true)
-
-            print("percentage: " + String(percentage))
-            let rad = (CGFloat(percentage)*2*CGFloat.pi)
-            print(rad)
-
-            let circularPath2 = UIBezierPath(arcCenter: center, radius: CGFloat(radius), startAngle: -CGFloat.pi/2, endAngle: rad-CGFloat.pi/2, clockwise: true)
-
-            self.addTrackLayer(path: circularPath.cgPath, color: color, ringWidth: ringWidth)
-
-            shapeLayer.path = circularPath2.cgPath
-            shapeLayer.fillColor = UIColor.clear.cgColor
-
-            shapeLayer.shadowColor = UIColor.black.cgColor
-            shapeLayer.shadowOffset = CGSize(width: -3.0, height: 3.0)
-            shapeLayer.shadowOpacity = 0.3
-            shapeLayer.shadowRadius = 8.0
-
-            shapeLayer.strokeEnd = 0
-
-            shapeLayer.lineCap = kCALineCapRound
-
-            shapeLayer.strokeColor = color.cgColor
-
-            shapeLayer.name = "shapeLayer"
-
-            let modelName = Device()
-            if (modelName.description == "iPhone 5s" || modelName.description == "iPhone SE" || modelName.description == "Simulator (iPhone 5s)") {
-                shapeLayer.lineWidth = 10
-            } else {
-                shapeLayer.lineWidth = ringWidth
-            }
-        }
-
-
-        func addTrackLayer(path:CGPath, color: UIColor, ringWidth: CGFloat) {
-            // Track Layer
-            trackLayer.path = path
-            trackLayer.fillColor = UIColor.clear.cgColor
-
-            trackLayer.strokeColor = color.withAlphaComponent(0.2).cgColor
-            let modelName = Device()
-            if (modelName.description == "iPhone 5s" || modelName.description == "iPhone SE" || modelName.description == "Simulator (iPhone 5s)") {
-                trackLayer.lineWidth = 10
-            } else {
-                trackLayer.lineWidth = ringWidth
-            }
-            trackLayer.name = "trackLayer"
-        }
-    }
-
-    func createRings() {
-        let ringWidth1 = ringView1.bounds.width;
-        print(ringWidth1)
-        let ringHeight1 = ringView1.bounds.height;
-        let ringWidth2 = ringView2.bounds.width;
-        let ringHeight2 = ringView2.bounds.height;
-        let ringWidth3 = ringView3.bounds.width;
-        let ringHeight3 = ringView3.bounds.height;
-
-        let ringWidth:CGFloat = 14;
-
-        let ringCenter1 = CGPoint(
-            x: ringWidth1/2,
-            y: ringHeight1/2
-        )
-        let ringCenter2 = CGPoint(
-            x: ringWidth2/2,
-            y: ringHeight2/2
-        )
-        let ringCenter3 = CGPoint(
-            x: ringWidth3/2,
-            y: ringHeight3/2
-        )
-
-        let ring1 = rings(center: ringCenter1,
-                          radius: Int(ringHeight1/2-ringWidth/2),
-                          ringWidth: ringWidth,
-                          color: Colors().red,
-                          percentage: 8/12)
-
-        let ring2 = rings(center: ringCenter2,
-                          radius: Int(ringHeight1/2-ringWidth/2),
-                          ringWidth: ringWidth,
-                          color: Colors().blue,
-                          percentage: 3.6/2.4)
-
-        let ring3 = rings(center: ringCenter3,
-                          radius: Int(ringHeight1/2-ringWidth/2),
-                          ringWidth: ringWidth,
-                          color: Colors().yellow,
-                          percentage: 36/(12*16))
-
-        let ringAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        ringAnimation.toValue = 1
-        ringAnimation.duration = 0.7;
-        ringAnimation.fillMode = kCAFillModeForwards
-        ringAnimation.isRemovedOnCompletion = false
-        ringAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-
-        ringView1.layer.addSublayer(ring1.shapeLayer)
-        ringView1.layer.addSublayer(ring1.trackLayer)
-        ring1.shapeLayer.add(ringAnimation, forKey: "dummy")
-
-        ringView2.layer.addSublayer(ring2.shapeLayer)
-        ringView2.layer.addSublayer(ring2.trackLayer)
-        ring2.shapeLayer.add(ringAnimation, forKey: "dummy")
-
-        ringView3.layer.addSublayer(ring3.shapeLayer)
-        ringView3.layer.addSublayer(ring3.trackLayer)
-        ring3.shapeLayer.add(ringAnimation, forKey: "dummy")
-    } */
-
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         //print("locations = \(locValue.latitude) \(locValue.longitude)")
