@@ -17,7 +17,7 @@ class RoundedTextField: UITextField {
         self.textColor = UIColor.darkText
         self.font = UIFont(name: "AppleSDGothicNeo-Light" , size: 18)
         self.layer.borderColor = UIColor.darkGray.cgColor
-        self.layer.borderWidth = 1
+        self.layer.borderWidth = 0.25
     }
     
     let padding = UIEdgeInsets(top: 0, left: 22.5, bottom: 0, right: 22.5);

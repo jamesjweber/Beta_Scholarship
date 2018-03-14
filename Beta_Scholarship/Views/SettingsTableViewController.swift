@@ -97,10 +97,6 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     
     }
-        
-        func printThis(da: String) {
-            print(da)
-        }
     
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

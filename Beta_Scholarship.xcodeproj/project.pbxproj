@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		1911807D201DAFD3002C7A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1911807C201DAFD2002C7A51 /* Assets.xcassets */; };
 		1923EEBE204538F60098C79C /* StudyHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1923EEBD204538F60098C79C /* StudyHoursViewController.swift */; };
+		1926D95E20565F12005383E9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1926D95D20565F12005383E9 /* Data.swift */; };
+		1926D96220567335005383E9 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1926D96120567335005383E9 /* SectionCollectionViewCell.swift */; };
+		192DD07D2057D06D001C76E4 /* StudyHoursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192DD07C2057D06D001C76E4 /* StudyHoursDetailViewController.swift */; };
+		192DD07F2057ED18001C76E4 /* SelectClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192DD07E2057ED18001C76E4 /* SelectClassViewController.swift */; };
+		196981CD2056D65700F8BD55 /* TimePerClassBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196981CC2056D65700F8BD55 /* TimePerClassBarChart.swift */; };
 		196B6F4F20468DA900341AF4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B6F4E20468DA900341AF4 /* Colors.swift */; };
+		199215F820578D4F00CE2A03 /* MyHoursTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199215F720578D4F00CE2A03 /* MyHoursTableView.swift */; };
 		199582D2203FC89600A3CCD1 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199582D1203FC89600A3CCD1 /* ResetPasswordViewController.swift */; };
 		1997609B2054C7A0001D5C5F /* AWSClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1997609A2054C7A0001D5C5F /* AWSClass.swift */; };
 		199D0A142050F9B000422988 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199D0A132050F9B000422988 /* GoogleSignInViewController.swift */; };
 		199FACF3203FEF41006A8E81 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199FACF2203FEF41006A8E81 /* MyInfoViewController.swift */; };
+		19A5D54E20583EE30025A792 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5D54D20583EE30025A792 /* OnboardingViewController.swift */; };
+		19A5D550205856810025A792 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A5D54F205856810025A792 /* Onboarding.storyboard */; };
+		19A5D553205902080025A792 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5D552205902080025A792 /* TimerViewController.swift */; };
 		19AA41DF204FC9C80067D2D6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */; };
 		19AA41E1204FE4C60067D2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19AA41E0204FE4C50067D2D6 /* GoogleService-Info.plist */; };
 		19AD40B1203D307A00421765 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD40B0203D307A00421765 /* GradientBackgroundView.swift */; };
@@ -33,18 +42,41 @@
 		3906035268EE7AFDC728E6E8 /* HouseStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906033BA965D58C2C3B74BB /* HouseStatusViewController.swift */; };
 		390607811EABBB95A18036B7 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39060FFBAA46F504FB6D14EE /* AppInfoViewController.swift */; };
 		3906098780665248CA0DC733 /* LeadershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39060279E8A49AFBB871A033 /* LeadershipViewController.swift */; };
-		8E00D5016682A07875415AF9 /* Pods_Beta_Scholarship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CC762E4323015B0411D68D /* Pods_Beta_Scholarship.framework */; };
+		39060C978B5A336ADC0493C9 /* TimePerClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906032366BD13B034039843 /* TimePerClassViewController.swift */; };
+		FAC665C12BA17F204FBE4683 /* Pods_Beta_Scholarship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31EF20ECD9CA521C667A38 /* Pods_Beta_Scholarship.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		192067D22056B00100F578B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1911807C201DAFD2002C7A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1923EEBD204538F60098C79C /* StudyHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyHoursViewController.swift; sourceTree = "<group>"; };
+		1926D95D20565F12005383E9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		1926D96120567335005383E9 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		192DD07C2057D06D001C76E4 /* StudyHoursDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyHoursDetailViewController.swift; sourceTree = "<group>"; };
+		192DD07E2057ED18001C76E4 /* SelectClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectClassViewController.swift; sourceTree = "<group>"; };
 		1944695E204FEBD90058FB13 /* Beta_Scholarship.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beta_Scholarship.entitlements; sourceTree = "<group>"; };
+		196981CC2056D65700F8BD55 /* TimePerClassBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePerClassBarChart.swift; sourceTree = "<group>"; };
 		196B6F4E20468DA900341AF4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		199215F720578D4F00CE2A03 /* MyHoursTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoursTableView.swift; sourceTree = "<group>"; };
 		199582D1203FC89600A3CCD1 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		1997609A2054C7A0001D5C5F /* AWSClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSClass.swift; sourceTree = "<group>"; };
 		199D0A132050F9B000422988 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		199FACF2203FEF41006A8E81 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		19A5D54D20583EE30025A792 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		19A5D54F205856810025A792 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		19A5D552205902080025A792 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		19AA41E0204FE4C50067D2D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19AD40B0203D307A00421765 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
@@ -63,12 +95,13 @@
 		19EDBE9C204137C700459F74 /* YearAndMajorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearAndMajorViewController.swift; sourceTree = "<group>"; };
 		3906014ABF7817C7DE762233 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		39060279E8A49AFBB871A033 /* LeadershipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadershipViewController.swift; sourceTree = "<group>"; };
+		3906032366BD13B034039843 /* TimePerClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePerClassViewController.swift; sourceTree = "<group>"; };
 		3906033BA965D58C2C3B74BB /* HouseStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseStatusViewController.swift; sourceTree = "<group>"; };
 		390604D25182B3764DAA852C /* ProboLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProboLevelViewController.swift; sourceTree = "<group>"; };
 		39060FFBAA46F504FB6D14EE /* AppInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
-		65D8D50572117A1B66CDEFD6 /* Pods-Beta_Scholarship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beta_Scholarship.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig"; sourceTree = "<group>"; };
-		81CC762E4323015B0411D68D /* Pods_Beta_Scholarship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beta_Scholarship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9A2451461D024B6D5D75D7C /* Pods-Beta_Scholarship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beta_Scholarship.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.debug.xcconfig"; sourceTree = "<group>"; };
+		3F31EF20ECD9CA521C667A38 /* Pods_Beta_Scholarship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beta_Scholarship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB0F307E589AA52DF708FF3 /* Pods-Beta_Scholarship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beta_Scholarship.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig"; sourceTree = "<group>"; };
+		E942117BD84B7695067646FA /* Pods-Beta_Scholarship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beta_Scholarship.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,28 +109,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E00D5016682A07875415AF9 /* Pods_Beta_Scholarship.framework in Frameworks */,
+				FAC665C12BA17F204FBE4683 /* Pods_Beta_Scholarship.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09ED2A22D8DE05086CDBFEA7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				81CC762E4323015B0411D68D /* Pods_Beta_Scholarship.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		19D694351FFE039700D671CF = {
 			isa = PBXGroup;
 			children = (
 				19D694401FFE039700D671CF /* Beta_Scholarship */,
 				19D6943F1FFE039700D671CF /* Products */,
-				655F53F92EB24C2F503DF7E8 /* Pods */,
-				09ED2A22D8DE05086CDBFEA7 /* Frameworks */,
+				E4468DB9D61FFC2CB958DD50 /* Pods */,
+				336177D7C1CDA08CDA9529A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +142,7 @@
 				19D694571FFE049900D671CF /* Classes */,
 				19D694561FFE048E00D671CF /* Views */,
 				19D694411FFE039700D671CF /* AppDelegate.swift */,
+				19A5D54F205856810025A792 /* Onboarding.storyboard */,
 				19D694451FFE039700D671CF /* Main.storyboard */,
 				1911807C201DAFD2002C7A51 /* Assets.xcassets */,
 				19D6944D1FFE039700D671CF /* LaunchScreen.storyboard */,
@@ -144,6 +170,12 @@
 				19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */,
 				199D0A132050F9B000422988 /* GoogleSignInViewController.swift */,
 				19DA69AA20565760007331E8 /* MyHoursViewController.swift */,
+				3906032366BD13B034039843 /* TimePerClassViewController.swift */,
+				199215F720578D4F00CE2A03 /* MyHoursTableView.swift */,
+				192DD07C2057D06D001C76E4 /* StudyHoursDetailViewController.swift */,
+				192DD07E2057ED18001C76E4 /* SelectClassViewController.swift */,
+				19A5D54D20583EE30025A792 /* OnboardingViewController.swift */,
+				19A5D552205902080025A792 /* TimerViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,13 +183,24 @@
 		19D694571FFE049900D671CF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				196981CC2056D65700F8BD55 /* TimePerClassBarChart.swift */,
 				19B29D22203C128F00688100 /* RoundedTextField.swift */,
 				19AD40B0203D307A00421765 /* GradientBackgroundView.swift */,
 				196B6F4E20468DA900341AF4 /* Colors.swift */,
 				19ED92CB204BE06D003F48E4 /* RoundedButtonProperties.swift */,
 				1997609A2054C7A0001D5C5F /* AWSClass.swift */,
+				1926D95D20565F12005383E9 /* Data.swift */,
+				1926D96120567335005383E9 /* SectionCollectionViewCell.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		336177D7C1CDA08CDA9529A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F31EF20ECD9CA521C667A38 /* Pods_Beta_Scholarship.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		39060B08F216B20D67BABF2B /* Config */ = {
@@ -168,11 +211,11 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		655F53F92EB24C2F503DF7E8 /* Pods */ = {
+		E4468DB9D61FFC2CB958DD50 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D9A2451461D024B6D5D75D7C /* Pods-Beta_Scholarship.debug.xcconfig */,
-				65D8D50572117A1B66CDEFD6 /* Pods-Beta_Scholarship.release.xcconfig */,
+				E942117BD84B7695067646FA /* Pods-Beta_Scholarship.debug.xcconfig */,
+				DAB0F307E589AA52DF708FF3 /* Pods-Beta_Scholarship.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -184,12 +227,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19D694531FFE039700D671CF /* Build configuration list for PBXNativeTarget "Beta_Scholarship" */;
 			buildPhases = (
-				404A2063FE7293AD90F8CE22 /* [CP] Check Pods Manifest.lock */,
+				8087BDEB33C66DEA48F50930 /* [CP] Check Pods Manifest.lock */,
 				19D6943A1FFE039700D671CF /* Sources */,
 				19D6943B1FFE039700D671CF /* Frameworks */,
 				19D6943C1FFE039700D671CF /* Resources */,
-				EB38AA244859DAF6418EEB5C /* [CP] Embed Pods Frameworks */,
-				08E1A1C09923FCEC821C8853 /* [CP] Copy Pods Resources */,
+				192067D22056B00100F578B6 /* Embed Frameworks */,
+				A25C6D6676DB50DE9B82F804 /* [CP] Embed Pods Frameworks */,
+				4D1271A187F7259ADC4D2E10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +258,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -247,6 +294,7 @@
 				19C85733204D1E800002BA22 /* awsconfiguration.json in Resources */,
 				19D6944F1FFE039700D671CF /* LaunchScreen.storyboard in Resources */,
 				19AA41E1204FE4C60067D2D6 /* GoogleService-Info.plist in Resources */,
+				19A5D550205856810025A792 /* Onboarding.storyboard in Resources */,
 				1911807D201DAFD3002C7A51 /* Assets.xcassets in Resources */,
 				19D694471FFE039700D671CF /* Main.storyboard in Resources */,
 			);
@@ -255,7 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08E1A1C09923FCEC821C8853 /* [CP] Copy Pods Resources */ = {
+		4D1271A187F7259ADC4D2E10 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,7 +327,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		404A2063FE7293AD90F8CE22 /* [CP] Check Pods Manifest.lock */ = {
+		8087BDEB33C66DEA48F50930 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,7 +345,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB38AA244859DAF6418EEB5C /* [CP] Embed Pods Frameworks */ = {
+		A25C6D6676DB50DE9B82F804 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +358,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/EPSignature/EPSignature.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
@@ -319,6 +368,8 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MKRingProgressView/MKRingProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -329,6 +380,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EPSignature.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -338,6 +390,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKRingProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,23 +410,32 @@
 				19D6944A1FFE039700D671CF /* Beta_Scholarship.xcdatamodeld in Sources */,
 				19DA69AB20565760007331E8 /* MyHoursViewController.swift in Sources */,
 				196B6F4F20468DA900341AF4 /* Colors.swift in Sources */,
+				192DD07F2057ED18001C76E4 /* SelectClassViewController.swift in Sources */,
 				19D694421FFE039700D671CF /* AppDelegate.swift in Sources */,
 				19AFA5B7203E7EC5004C6BF6 /* ForgotPasswordViewController.swift in Sources */,
 				19B29D21203C083900688100 /* SignInViewController.swift in Sources */,
 				1997609B2054C7A0001D5C5F /* AWSClass.swift in Sources */,
 				19B29D23203C128F00688100 /* RoundedTextField.swift in Sources */,
+				19A5D553205902080025A792 /* TimerViewController.swift in Sources */,
 				19AD40B1203D307A00421765 /* GradientBackgroundView.swift in Sources */,
 				1923EEBE204538F60098C79C /* StudyHoursViewController.swift in Sources */,
+				199215F820578D4F00CE2A03 /* MyHoursTableView.swift in Sources */,
+				19A5D54E20583EE30025A792 /* OnboardingViewController.swift in Sources */,
 				19AA41DF204FC9C80067D2D6 /* SettingsTableViewController.swift in Sources */,
 				19EDBE9D204137C700459F74 /* YearAndMajorViewController.swift in Sources */,
 				199FACF3203FEF41006A8E81 /* MyInfoViewController.swift in Sources */,
 				199582D2203FC89600A3CCD1 /* ResetPasswordViewController.swift in Sources */,
+				1926D95E20565F12005383E9 /* Data.swift in Sources */,
+				196981CD2056D65700F8BD55 /* TimePerClassBarChart.swift in Sources */,
 				19ED92CC204BE06D003F48E4 /* RoundedButtonProperties.swift in Sources */,
 				3906035268EE7AFDC728E6E8 /* HouseStatusViewController.swift in Sources */,
 				390602728945C76F0A31EE51 /* ProboLevelViewController.swift in Sources */,
 				3906098780665248CA0DC733 /* LeadershipViewController.swift in Sources */,
 				390607811EABBB95A18036B7 /* AppInfoViewController.swift in Sources */,
+				1926D96220567335005383E9 /* SectionCollectionViewCell.swift in Sources */,
 				39060324509DA91C1872DC7E /* Constants.swift in Sources */,
+				39060C978B5A336ADC0493C9 /* TimePerClassViewController.swift in Sources */,
+				192DD07D2057D06D001C76E4 /* StudyHoursDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +464,7 @@
 		19D694511FFE039700D671CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -460,6 +524,7 @@
 		19D694521FFE039700D671CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -511,8 +576,9 @@
 		};
 		19D694541FFE039700D671CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9A2451461D024B6D5D75D7C /* Pods-Beta_Scholarship.debug.xcconfig */;
+			baseConfigurationReference = E942117BD84B7695067646FA /* Pods-Beta_Scholarship.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Beta_Scholarship/Beta_Scholarship.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,8 +594,9 @@
 		};
 		19D694551FFE039700D671CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65D8D50572117A1B66CDEFD6 /* Pods-Beta_Scholarship.release.xcconfig */;
+			baseConfigurationReference = DAB0F307E589AA52DF708FF3 /* Pods-Beta_Scholarship.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Beta_Scholarship/Beta_Scholarship.entitlements;
 				CODE_SIGN_STYLE = Automatic;

@@ -17,6 +17,8 @@ import GoogleMaps
 import Google
 import GoogleSignIn
 
+let onboardingKey = "onboardingShown"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
@@ -28,6 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
 
     var pinpoint: AWSPinpoint?
+
+    enum StoryboardName : String {
+        case Main = "Main"
+        case Onboarding = "Onboarding"
+    }
 
     /*
     func applicationDidFinishLaunching(_ application: UIApplication) {
@@ -44,12 +51,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                                                  annotation: annotation)
     }
     */
+
+    /* func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        
+        return true
+    } */
+    
+
+
+    func launchStoryboard(storyboard: StoryboardName) {
+        //UIApplication.shared.setStatusBarHidden(true, with: .slide)
+        let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: nil)
+        let controller = storyboard.instantiateInitialViewController()
+        self.window?.rootViewController = controller
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = "119748911166-vdrm2q4u9drusd6gg2me891li5tf4pfp.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
-        
+
         application.applicationIconBadgeNumber = 0
 
         // Initialize Pinpoint
@@ -93,7 +115,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GMSPlacesClient.provideAPIKey("AIzaSyDiDa0xyWG2_rkrMQAPbc3kIM4r_CP1XDc")
         GMSServices.provideAPIKey("AIzaSyDiDa0xyWG2_rkrMQAPbc3kIM4r_CP1XDc")
 
+        
+        print("b4")
+        Settings.registerDefaults()
+        print("aftr")
+
+        let onboardingOccured = Settings.groupDefaults().bool(forKey: onboardingKey)
+
+        if(!onboardingOccured) {
+            launchStoryboard(storyboard: StoryboardName.Onboarding)
+        } else {
+            launchStoryboard(storyboard: StoryboardName.Main)
+        }
+
+        let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(settings)
+        UIApplication.shared.registerForRemoteNotifications()
+
         return true
+    }
+
+
+    // Handle remote notification registration.
+    func application(application: UIApplication,didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+//send this device token to server
+    }
+
+//Called if unable to register for APNS.
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+
+        print(error)
+
+    }
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+
+        print("Recieved: \(userInfo)")
+        //Parsing userinfo:
+        /* var temp : Dictionary = userInfo as? Dictionary
+        if let info = userInfo["aps"] as? Dictionary<String, AnyObject>
+        {
+            var alertMsg = info["alert"] as! String
+            var alert: UIAlertView!
+            alert = UIAlertView(title: "", message: alertMsg, delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        } */
     }
     
     func application(_ application: UIApplication,
@@ -306,3 +371,15 @@ extension AppDelegate: AWSCognitoIdentityRememberDevice {
     }
 }
 
+class Settings {
+    class func groupDefaults() -> UserDefaults {
+        // initialize with suite name for extensions compatibility
+        return UserDefaults(suiteName: "group.com.James.Defaults")!
+    }
+
+    class func registerDefaults(){
+        let defaults = groupDefaults()
+        defaults.register(defaults: [ onboardingKey : false ])
+        defaults.synchronize()
+    }
+}

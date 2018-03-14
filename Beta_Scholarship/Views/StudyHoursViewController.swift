@@ -13,6 +13,7 @@ import GooglePlacePicker
 import MKRingProgressView
 import AWSDynamoDB
 import AWSCognitoIdentityProvider
+import GooglePlacePicker
 
 class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -49,6 +50,8 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     
     let cache = NSCache<NSString, userInformation>()
 
+    var myPlace:GMSPlace?
+
     override func viewDidLoad() {
         locationManager.requestWhenInUseAuthorization()
 
@@ -79,7 +82,22 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    func openPlacePicker() {
+        // Create a place picker. Attempt to display it as a popover if we are on a device which
+        // supports popovers.
+        let config = GMSPlacePickerConfig(viewport: nil)
+        let placePicker = GMSPlacePickerViewController(config: config)
+        placePicker.delegate = self
+        placePicker.modalPresentationStyle = .popover
+        //placePicker.popoverPresentationController?.sourceView = self
+        //placePicker.popoverPresentationController?.sourceRect = self.bounds
+
+        // Display the place picker. This will call the delegate methods defined below when the user
+        // has made a selection.
+        self.present(placePicker, animated: true, completion: nil)
+    }
+
     func refresh() {
         self.resetRings()
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
@@ -129,13 +147,6 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
                                 //print("item: \(item)")
                                 if (!self.userHours.contains(item)) {
                                     //print("Date: \(item.Date_And_Time!) :\(item.Hours!)")
-                                    
-                                    for ind in 0..<self.userHours.count {
-                                        if(self.userHours[ind].Date_And_Time == item.Date_And_Time) {
-                                            self.userHours.remove(at: ind)
-                                            print("Removed!")
-                                        }
-                                    }
                                     self.userHours.append(item)
                                 }
                                 
@@ -206,7 +217,7 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
             self.ringView2.animateTo(Int(currentForDay / goalForDay * 100))
             self.ringView3.animateTo(Int(currentForSemester / goalForSemester * 100))
             
-            print("currentForDay: " + String(format: "%02.1lf", currentForDay))
+            //print("currentForDay: " + String(format: "%02.1lf", currentForDay))
             
             self.hoursForWeek.animateTo(currentForWeek,outOf: goalForWeek)
             self.hoursForDay.animateTo(currentForDay,outOf: goalForDay)
@@ -248,55 +259,7 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func startStudying(_ sender: Any) {
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
-        }
-        let locValue:CLLocationCoordinate2D = locationManager.location!.coordinate
-        print(locValue)
-        initialLocation = locValue
-        
-        let center = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
-        let northEast = CLLocationCoordinate2D(latitude: center.latitude + 0.001, longitude: center.longitude + 0.001)
-        let southWest = CLLocationCoordinate2D(latitude: center.latitude - 0.001, longitude: center.longitude - 0.001)
-        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-        let config = GMSPlacePickerConfig(viewport: viewport)
-        let placePicker = GMSPlacePicker(config: config)
-        
-        //let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-        //mapView.settings.scrollGestures = false
-        
-        placePicker.pickPlace(callback: {(place, error) -> Void in
-            if let error = error {
-                print("Pick Place error: \(error.localizedDescription)")
-                return
-            }
-            
-            if let place = place {
-                // self.nameLabel.text = place.name
-                // self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ").joined(separator: "\n")
-                print(locValue)
-                print("----------------------")
-                print(place.name)
-                self.locationName = place.name
-                self.defaults.set(self.locationName, forKey: "locationName")
-                print(place.coordinate)
-                print("----------------------")
-                print(self.compareCoordinates(place.coordinate, locValue))
-                
-                if(!self.compareCoordinates(place.coordinate, locValue)){
-                    let alert = UIAlertController(title: "Invalid Location!", message: "The location you chose is too far away from your current location.", preferredStyle: .alert)
-                    
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in  }))
-                    
-                    self.present(alert, animated: true, completion: nil)
-                }
-                else {
-                    self.locationSet = true
-                }
-            }
-        })
+        openPlacePicker()
     }
 
     func compareCoordinates(_ cllc2d1 : CLLocationCoordinate2D, _ cllc2d2 : CLLocationCoordinate2D) -> Bool {
@@ -367,4 +330,48 @@ extension String {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return String(self[start..<end])
     }
+}
+
+extension StudyHoursViewController : GMSPlacePickerViewControllerDelegate {
+
+    func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
+        // Create the next view controller we are going to display and present it.
+        // let nextScreen = PlacePickerViewController(place: place)
+
+        myPlace = place
+
+        performSegue(withIdentifier: "Study Hours To Class", sender: self)
+        //self.mapViewController?.coordinate = place.coordinate
+
+        // Dismiss the place picker.
+        viewController.dismiss(animated: true, completion: nil)
+    }
+
+    func placePicker(_ viewController: GMSPlacePickerViewController, didFailWithError error: Error) {
+        // In your own app you should handle this better, but for the demo we are just going to log
+        // a message.
+        NSLog("An error occurred while picking a place: \(error)")
+    }
+
+    func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
+        NSLog("The place picker was canceled by the user")
+
+        // Dismiss the place picker.
+        viewController.dismiss(animated: true, completion: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "Study Hours To Class" {
+            let selectClassViewController = segue.destination as! SelectClassViewController
+            if sender != nil {
+                selectClassViewController.place = myPlace
+                print("myPlace2: \(myPlace)")
+            } else {
+                print("sender was nil!")
+            }
+        }
+    }
+
 }

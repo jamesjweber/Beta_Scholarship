@@ -10,6 +10,9 @@ PODS:
     - AWSCore (= 2.6.13)
   - AWSS3 (2.6.13):
     - AWSCore (= 2.6.13)
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
   - DeviceKit (1.5.0)
   - EPSignature (1.0.4)
   - GGLInstanceID (1.2.1)
@@ -80,6 +83,11 @@ PODS:
   - NVActivityIndicatorView (4.1.1):
     - NVActivityIndicatorView/Presenter (= 4.1.1)
   - NVActivityIndicatorView/Presenter (4.1.1)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
   - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
@@ -87,6 +95,7 @@ DEPENDENCIES:
   - AWSDynamoDB
   - AWSPinpoint
   - AWSS3
+  - Charts
   - DeviceKit
   - EPSignature
   - Google/Analytics
@@ -97,6 +106,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - MKRingProgressView
   - NVActivityIndicatorView
+  - RealmSwift
   - SWRevealViewController
 
 SPEC CHECKSUMS:
@@ -106,6 +116,7 @@ SPEC CHECKSUMS:
   AWSDynamoDB: 36abff7ce93fcadad2c4dc6f729d8716c933adf2
   AWSPinpoint: 47b0351d0adb0e12681da4ac9fe19f2690d6c713
   AWSS3: 7c178c82c2e648559b7075a663335055327dd4f5
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
   DeviceKit: 883552d64028056216e913a88f892e7e29678e75
   EPSignature: a56bf2c41abc165bf2d0efb955b1c05dcabdcfa3
   GGLInstanceID: 4a317044f744281b82cd03015f379899f277cad3
@@ -128,8 +139,10 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
   MKRingProgressView: 023e2241d1ef23b05cb9893aa4878395861e3902
   NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: abdcd5ae5fe0e89a061a71fd4dc4084ab9d803aa
+PODFILE CHECKSUM: 12f41d4dc0901008c80a7f54e49b559c80e89c85
 
 COCOAPODS: 1.4.0
