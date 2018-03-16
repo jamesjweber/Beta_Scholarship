@@ -12,26 +12,29 @@ import DeviceKit
 class YearAndMajorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet weak var major: RoundedTextField!
     
     let YearInSchool:[String] = ["Freshman","Sophomore","Junior","Senior"]
-    
     var year = String()
+    var signInInfo: signInInformation?
+    
+    var yearSelected = false
+    var majorSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         tableView.delegate = self
         tableView.dataSource = self
-        configureButton(button: backButton, view: self)
         configureButton(button: nextButton, view: self)
+
+        if let name = signInInfo!.name.first {
+            print("first name: \(name)")
+        } else {
+            print("not gucci")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,7 +71,8 @@ class YearAndMajorViewController: UIViewController, UITableViewDelegate, UITable
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
             year = (cell.textLabel?.text)!
-            print(year)
+            signInInfo?.school.year = cell.textLabel?.text!
+            yearSelected = true
         }
     }
     
@@ -77,7 +81,14 @@ class YearAndMajorViewController: UIViewController, UITableViewDelegate, UITable
             cell.accessoryType = .none
         }
     }
-
+    
+    @IBAction func majorTextFieldDidChange(_ sender: RoundedTextField) {
+        signInInfo?.school.major = major.text!
+        if (!major.isEmpty()) {
+            majorSelected = true
+        }
+    }
+    
     func changeTextForSmallDevices() {
         let modelName = Device()
         print("model: " + String(modelName.description))
@@ -87,57 +98,53 @@ class YearAndMajorViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    @IBAction func goBackToOneButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "unwindToMyInfoWithSegue", sender: self)
-    }
-    
     @IBAction func unwindToYearAndMajor(segue:UIStoryboardSegue) {
         
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    @IBAction func nextButtonTouched(_ sender: UIButton) {
+        if (!majorSelected && !yearSelected) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
+            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(Ok)
+            self.present(alert, animated: true, completion: nil)
+        } else if (!yearSelected) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please select your year in school", preferredStyle: .alert)
+            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(Ok)
+            self.present(alert, animated: true, completion: nil)
+        } else if (!majorSelected) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out the 'Major' field", preferredStyle: .alert)
+            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(Ok)
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "Year And Major To Brother Status", sender: self)
+        }
     }
-    */
 
-    /* 
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Year And Major To Brother Status" {
+            let brotherStatusViewController = segue.destination as! HouseStatusViewController
+            if sender != nil {
+                brotherStatusViewController.signInInfo = signInInfo
+            }
+        }
     }
-    */
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

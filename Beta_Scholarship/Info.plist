@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;Allow Beta Scholarship permission to be able to set your profile picture&quot;</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;Allow Beta Scholarship permission to be able to set your profile picture&quot;</string>
 	<key>AWS</key>
 	<dict>
 		<key>CredentialsProvider</key>
@@ -142,7 +146,7 @@
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSLocationWhenInUseUsageDescription</key>
-		<string>"Allow Beta Theta Pi to use location to track study hours"</string>
+		<string>&quot;Allow Beta Theta Pi to use location to track study hours&quot;</string>
 		<key>NSPhotoLibraryUsageDescription</key>
 		<string>Allow access to Photo Library</string>
 		<key>UIAppFonts</key>
@@ -182,7 +186,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>"Allow Beta Theta Pi to use location to track study hours"</string>
+	<string>&quot;Allow Beta Scholarship to use location to track study hours&quot;</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

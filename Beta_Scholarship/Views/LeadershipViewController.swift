@@ -11,8 +11,8 @@ import DeviceKit
 
 class LeadershipViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var bottomLabel: UILabel!
 
@@ -21,8 +21,9 @@ class LeadershipViewController: UIViewController, UITableViewDelegate, UITableVi
         var sectionPositions : [String]!
     }
 
+    var checked = Set<IndexPath>()
     var userHousePositions:[String] = [String]()
-
+    var signInInfo: signInInformation?
     var housePosArr = [HousePositionSections]()
 
     func setHousePositionSections() {
@@ -84,14 +85,12 @@ class LeadershipViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        if let signIn = signInInfo {
+            print("signIn.beta.proboLevel: \(signIn.beta.proboLevel)")
+        }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         tableView.delegate = self
         tableView.dataSource = self
-        configureButton(button: backButton, view: self)
         configureButton(button: nextButton, view: self)
         setHousePositionSections() 
     }
@@ -117,31 +116,68 @@ class LeadershipViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "HousePositions", for: indexPath)
         cell.textLabel?.text = housePosArr[indexPath.section].sectionPositions[indexPath.row]
         cell.backgroundColor = UIColor.white
+
+        if (checked.contains(indexPath)) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+
         return cell
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return housePosArr[section].sectionName
     }
- 
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
+
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
-            cell.accessoryType = .checkmark
-            //year = (cell.textLabel?.text)!
-            //print(year)
+
+        if self.checked.contains(indexPath) {
+            self.checked.remove(indexPath)
+            for x in 0..<self.userHousePositions.count {
+                if self.userHousePositions[x] == (tableView.cellForRow(at: indexPath)?.textLabel?.text)! {
+                    self.userHousePositions.remove(at: x)
+                }
+            }
+        } else {
+            self.checked.insert(indexPath)
+            self.userHousePositions.append((tableView.cellForRow(at: indexPath)?.textLabel?.text!)!)
         }
+
+        tableView.reloadRows(at:[indexPath], with:.fade)
     }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+
+    /* func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+
+        let section = indexPath.section
+        let numberOfRows = tableView.numberOfRows(inSection: section)
+        for row in 0..<numberOfRows {
+            if let cell = tableView.cellForRow(at: NSIndexPath(row: row, section: section) as IndexPath) as UITableViewCell? {
+                if ( row == indexPath.row ) { cell.accessoryType = .checkmark }
+                self.userHousePositions.append((cell.textLabel?.text)!)
+                for x in 0..<self.userHousePositions.count {
+                    if self.userHousePositions[x] == (cell.textLabel?.text)! {
+                        self.userHousePositions.remove(at: x)
+                    }
+                }
+            }
+        }
+
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .none
+            for x in 0..<self.userHousePositions.count {
+                if self.userHousePositions[x] == (cell.textLabel?.text)! {
+                    self.userHousePositions.remove(at: x)
+                }
+            }
         }
-    }
-    
+    } */
+
     func changeTextForSmallDevices() {
         let modelName = Device()
         print("model: " + String(modelName.description))
@@ -154,50 +190,28 @@ class LeadershipViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBAction func unwindToLeadership(segue:UIStoryboardSegue) {
         
     }
+
+
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+
+        if userHousePositions.isEmpty {
+            signInInfo?.beta.housePositions = "None"
+        } else {
+            let housePositionsString = userHousePositions.joined(separator: ", ")
+            signInInfo?.beta.housePositions = housePositionsString
+        }
+
+        performSegue(withIdentifier: "House Positions To App Information", sender: self)
+    }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /* 
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "House Positions To App Information" {
+            let appInfoViewController = segue.destination as! AppInfoViewController
+            if sender != nil {
+                appInfoViewController.signInInfo = signInInfo
+            }
+        }
     }
-    */
 
 }

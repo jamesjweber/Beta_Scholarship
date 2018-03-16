@@ -37,4 +37,11 @@ class RoundedTextField: UITextField {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
 
+    func isEmpty() -> Bool {
+        if self.text != nil && self.text != "" {
+            return false
+        } else {
+            return true
+        }
+    }
 }

@@ -28,9 +28,11 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var studyLogButton: UIButton!
     @IBOutlet weak var startStudyingButton: UIButton!
 
+    @IBOutlet weak var timerButton: UIBarButtonItem!
+    
     let locationManager = CLLocationManager()
     var initialLocation:CLLocationCoordinate2D!
-    var locationName:String!
+    var locationName:String?
     var locationSet: Bool!
     
     var credentialsProvider: AWSCognitoCredentialsProvider?
@@ -47,16 +49,17 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     var weekHours: Double = 0
 
     let defaults = UserDefaults.standard
-    
     let cache = NSCache<NSString, userInformation>()
-
     var myPlace:GMSPlace?
+    var classDescription: String?
 
     override func viewDidLoad() {
         locationManager.requestWhenInUseAuthorization()
 
         super.viewDidLoad()
-        
+
+        loadDefaults()
+
         // S3 Intializations
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1, identityPoolId:"us-east-1:bb023064-cbc1-40da-8cfc-84cc04d5485f")
         let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
@@ -73,7 +76,7 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        loadDefaults()
         refresh()
         
     }
@@ -174,8 +177,16 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func loadDefaults() {
-        //startTime = defaults.object(forKey: "startTime") as? [Int] ?? [Int]() //studying = defaults.object(forKey: "studying") as? Bool ?? false //paused = defaults.object(forKey: "paused") as? Bool ?? false //classDescription = defaults.object(forKey: "className") as? String ?? String() //diffTime = defaults.object(forKey: "diffTime") as? [Int] ?? [Int]() //pauseTime = defaults.object(forKey: "pauseTime") as? [Int] ?? [Int]() //timer.text! = defaults.object(forKey: "timerText") as? String ?? String()
-        locationName = defaults.object(forKey: "locationName") as? String ?? String()
+        let studying = defaults.object(forKey: "studying") as? Bool ?? Bool()
+        print("studying: \(studying)")
+        if (!studying) {
+            timerButton.isEnabled = false
+        } else {
+            timerButton.isEnabled = true
+        }
+
+        locationName = defaults.string(forKey: "locationName") as? String ?? String()
+        classDescription = defaults.string(forKey: "classDescription")  as? String ?? String()
     }
     
     func resetRings() {
@@ -213,9 +224,9 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         let (currentForWeek,currentForDay,currentForSemester) = calcMyCumulativeHours(userHours)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.ringView1.animateTo(Int(currentForWeek / goalForWeek * 100))
-            self.ringView2.animateTo(Int(currentForDay / goalForDay * 100))
-            self.ringView3.animateTo(Int(currentForSemester / goalForSemester * 100))
+            self.ringView1.animateTo(currentForWeek / goalForWeek * 100)
+            self.ringView2.animateTo(currentForDay / goalForDay * 100)
+            self.ringView3.animateTo(currentForSemester / goalForSemester * 100)
             
             //print("currentForDay: " + String(format: "%02.1lf", currentForDay))
             
@@ -272,16 +283,44 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         return  fabs(cllc2d1.latitude - cllc2d2.latitude) <= epsilon && fabs(cllc2d1.longitude - cllc2d2.longitude) <= epsilon
     }
 
+    
+    @IBAction func unwindToStudyHours(segue:UIStoryboardSegue) {
+        
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        /*if segue.identifier == "Study Hours To Timer" {
+            let timerViewController = segue.destination as! TimerViewController
+            if sender != nil {
+                timerViewController.place = myPlace
+                timerViewController.classDescription = classDescription
+            } else {
+                print("sender was nil!")
+            }
+        } */
+        if segue.identifier == "Study Hours To Class" {
+            let selectClassViewController = segue.destination as! SelectClassViewController
+            if sender != nil {
+                selectClassViewController.place = myPlace
+                print("myPlace2: \(myPlace)")
+            } else {
+                print("sender was nil!")
+            }
+        }
+    }
+
+    
 }
 
 extension MKRingProgressView { 
-    func animateTo(_ number : Int) {
+    func animateTo(_ number : Double) {
         CATransaction.begin()
         CATransaction.setAnimationDuration(0.7)
         CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
         
-        self.progress = Double(number)/100
+        self.progress = number/100
         
         CATransaction.commit()
     }
@@ -332,19 +371,49 @@ extension String {
     }
 }
 
+
+
 extension StudyHoursViewController : GMSPlacePickerViewControllerDelegate {
 
     func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
-        // Create the next view controller we are going to display and present it.
-        // let nextScreen = PlacePickerViewController(place: place)
 
+        // Google's Place
         myPlace = place
 
-        performSegue(withIdentifier: "Study Hours To Class", sender: self)
-        //self.mapViewController?.coordinate = place.coordinate
+        // User's Current Location
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
+        let locValue:CLLocationCoordinate2D = locationManager.location!.coordinate
+        print(locValue)
+        initialLocation = locValue
 
-        // Dismiss the place picker.
-        viewController.dismiss(animated: true, completion: nil)
+        // If the user picks a location that they are not at, send alert notify them of that
+        if(!self.compareCoordinates(place.coordinate, locValue)){
+
+            let alert = UIAlertController(title: "Invalid Location!", message: "The location you chose is too far away from your current location.", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { (alertAction) in
+                // Dismiss old view
+                viewController.dismiss(animated: false, completion: nil)
+                let config = GMSPlacePickerConfig(viewport: nil)
+                let placePicker = GMSPlacePickerViewController(config: config)
+                placePicker.delegate = self
+                placePicker.modalPresentationStyle = .popover
+
+                // Add new one
+                self.present(placePicker, animated: false, completion: nil)
+            })
+
+            viewController.present(alert, animated: true, completion: nil)
+        }
+        else {
+            performSegue(withIdentifier: "Study Hours To Class", sender: self)
+            viewController.dismiss(animated: true, completion: nil)
+        }
+
     }
 
     func placePicker(_ viewController: GMSPlacePickerViewController, didFailWithError error: Error) {
@@ -359,19 +428,4 @@ extension StudyHoursViewController : GMSPlacePickerViewControllerDelegate {
         // Dismiss the place picker.
         viewController.dismiss(animated: true, completion: nil)
     }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "Study Hours To Class" {
-            let selectClassViewController = segue.destination as! SelectClassViewController
-            if sender != nil {
-                selectClassViewController.place = myPlace
-                print("myPlace2: \(myPlace)")
-            } else {
-                print("sender was nil!")
-            }
-        }
-    }
-
 }

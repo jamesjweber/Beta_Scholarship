@@ -57,7 +57,6 @@ class OnboardingViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
             case .authorizedAlways, .authorizedWhenInUse:
                 //set the default
-                print("GUCCI")
                 Settings.groupDefaults().set(true, forKey: onboardingKey)
                 //now load the main storyboard
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate

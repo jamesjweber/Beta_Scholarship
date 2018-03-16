@@ -17,6 +17,10 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
     var response: AWSCognitoIdentityUserGetDetailsResponse?
     var user: AWSCognitoIdentityUser?
     var pool: AWSCognitoIdentityUserPool?
+    @IBOutlet weak var firstName: UILabel!
+    @IBOutlet weak var lastName: UILabel!
+    @IBOutlet weak var profilePic: UIImageView!
+    var profilePicURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,18 +31,19 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+
         // S3 Intializations
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1, identityPoolId:"us-east-1:bb023064-cbc1-40da-8cfc-84cc04d5485f")
         let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
-        
+
         // Other AWS Stuff
         self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
         if (self.user == nil) {
             self.user = self.pool?.currentUser()
         }
         refresh()
+        refresh2()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,7 +62,7 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
         // #warning Incomplete implementation, return the number of rows
         return 0
     } */
-    
+
     func refresh() {
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
             DispatchQueue.main.async(execute: {
@@ -66,15 +71,16 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
             return nil
         }
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
         print(indexPath.section)
         print(indexPath.row)
-        
-        if indexPath.section == 3 && indexPath.row == 0 {
+
+        if indexPath.section == 2 && indexPath.row == 0 {
             print("signing out")
-            
+
+            // Sign Out
             let alert = UIAlertController(title: nil, message: "Are you sure you want to to log out?", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: NSLocalizedString("Log Out", comment: "Default action"), style: .destructive, handler: { (action) -> Void in
                 // Sign Out
@@ -86,18 +92,17 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
             alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Default action"), style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-        
-        if (indexPath.section == 2 && indexPath.row == 1) {
+
+        if (indexPath.section == 1 && indexPath.row == 1) {
             if (GIDSignIn.sharedInstance().currentUser == nil) {
-                // let printShit: String = "hello world"
-                
+                GIDSignIn.sharedInstance().signIn()
             }
         }
-        
+
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-    
+
     }
-    
+
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -124,7 +129,7 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -152,5 +157,71 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+
+    func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            completion(data, response, error)
+        }.resume()
+    }
+
+    func downloadImage(url: URL) {
+        print("Download Started")
+        getDataFromUrl(url: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            DispatchQueue.main.async() {
+                self.profilePic.image = UIImage(data: data)
+            }
+        }
+    }
+
+
+    func refresh2() {
+        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
+            DispatchQueue.main.async(execute: {
+                self.response = task.result
+                if let response = self.response {
+                    self.setLabels()
+                    if(self.profilePicURL != nil) {
+                        if (self.profilePic.image == UIImage(named: "defaultProfilePicture")) {
+                            let myURL: URL = URL(string: "\(self.profilePicURL!)")!
+                            self.downloadImage(url: myURL)
+                        }
+                    }
+                } else {
+                    print("ruh")
+                }
+            })
+            return nil
+        }
+    }
+
+    func setLabels() {
+        if let userAttributes = response?.userAttributes! {
+            for userAttribute in userAttributes {
+                if (userAttribute.name == "given_name") {
+                    firstName.text! = userAttribute.value!
+                } else if (userAttribute.name == "custom:profile_pic_url") {
+                    profilePicURL = userAttribute.value!
+                } else if (userAttribute.name == "family_name") {
+                    lastName.text! = userAttribute.value!
+                }
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Settings To Account Info" {
+            let accountInfoViewController = segue.destination as! AccountInfoTableViewController
+            if sender != nil {
+                accountInfoViewController.preloadedProfilePic = profilePic.image
+            }
+        }
+    }
+    
+    @IBAction func unwindToSettings(segue:UIStoryboardSegue) {
+        
+    }
 
 }

@@ -64,11 +64,6 @@ class MyHoursViewController: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
 extension MyHoursViewController: UITableViewDataSource {
@@ -177,6 +172,50 @@ extension MyHoursViewController: UITableViewDataSource {
             })
             return nil
         }
+    }
+
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return NO if you do not want the specified item to be editable.
+        return true
+    }
+
+    // Override to support editing the table view.
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            if var myTableRows = self.tableSection {
+                let section = maxWeek - indexPath.section - 1
+                let row = indexPath.row - 1
+                let item = myTableRows[section]![row]
+                self.deleteTableRow(item)
+                myTableRows[section]!.remove(at: row)
+                self.tableSection = myTableRows
+
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        }
+    }
+
+    func deleteTableRow(_ row: studyHours) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+
+        let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+        dynamoDBObjectMapper.remove(row).continueWith(executor: AWSExecutor.mainThread(), block: { (task:AWSTask!) -> AnyObject! in
+
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+
+            if let error = task.error as NSError? {
+                print("Error: \(error)")
+
+                let alertController = UIAlertController(title: "Failed to delete a row.", message: error.description, preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+
+            return nil
+        })
+
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

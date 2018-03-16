@@ -17,18 +17,17 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInText: UITextView!
     @IBOutlet weak var usernameOrEmail: RoundedTextField!
     @IBOutlet weak var password: RoundedTextField!
-    @IBOutlet weak var forgotPasswordButton: UIButton!
+    //@IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     var passwordAuthenticationCompletion: AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails>?
     var usernameText: String?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         changeTextForSmallDevices()
-        configureButton(button: forgotPasswordButton, view: self)
         configureButton(button: loginButton, view: self)
         configureButton(button: signUpButton, view: self)
     }
@@ -39,20 +38,26 @@ class SignInViewController: UIViewController {
         self.usernameOrEmail.text = usernameText
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func loginButtonPressedDown(_ sender: UIButton) {
         if (self.usernameOrEmail.text != "" && self.password.text != "") {
             let authDetails = AWSCognitoIdentityPasswordAuthenticationDetails(username: self.usernameOrEmail.text!, password: self.password.text! )
             self.passwordAuthenticationCompletion?.set(result: authDetails)
         } else {
-            let alertController = UIAlertController(title: "Missing information", message: "Please enter a valid user name and password", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Missing information", message: "Please enter a valid user name and password", preferredStyle: .alert)
             let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
-            alertController.addAction(retryAction)
+            alert.addAction(retryAction)
+            self.present(alert, animated: true, completion: nil)
         }
         sender.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
     }
@@ -95,8 +100,8 @@ extension SignInViewController: AWSCognitoIdentityPasswordAuthentication {
     public func didCompleteStepWithError(_ error: Error?) {
         DispatchQueue.main.async {
             if let error = error as NSError? {
-                let alertController = UIAlertController(title: error.userInfo["__type"] as? String,
-                        message: error.userInfo["message"] as? String,
+                let alertController = UIAlertController(title: "Invalid Username or Password",
+                        message: "Please try again",
                         preferredStyle: .alert)
                 let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
                 alertController.addAction(retryAction)

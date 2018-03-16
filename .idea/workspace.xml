@@ -2,75 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c0854bc-8e9d-4073-bebf-b93e1ed4388e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Calendar.imageset/Calendar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Calendar.imageset/Calendar@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Calendar.imageset/Calendar@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Calendar.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Class Attendance.imageset/Class Attendance.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Class Attendance.imageset/Class Attendance@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Class Attendance.imageset/Class Attendance@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Class Attendance.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Clock.imageset/Clock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Clock.imageset/Clock@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Clock.imageset/Clock@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Clock.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Exclamation Point.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Exclamation Point.imageset/Exclamation Point.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Exclamation Point.imageset/Exclamation Point@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Exclamation Point.imageset/Exclamation Point@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Faux Progress Bars.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Faux Progress Bars.imageset/Faux Progress Bars.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Faux Progress Bars.imageset/Faux Progress Bars@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Faux Progress Bars.imageset/Faux Progress Bars@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Location.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Location.imageset/Location.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Location.imageset/Location@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Location.imageset/Location@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Studying.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Studying.imageset/Studying.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Studying.imageset/Studying@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Studying.imageset/Studying@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer.imageset/Timer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer.imageset/Timer@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer.imageset/Timer@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/Data.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/SectionCollectionViewCell.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Onboarding.storyboard" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursTableView.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursDetailViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jamesweber.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Blank.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Blank@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Blank@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Contents.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Contents.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Play@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Play@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Contents.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/SignInInformation.swift" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/AccountInfoTableViewController.swift" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/ConfirmSignUpViewController.swift" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause.png" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause.png" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@2x.png" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@2x.png" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@3x.png" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@3x.png" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Beta_Scholarship.entitlements" afterPath="$PROJECT_DIR$/Beta_Scholarship/Beta_Scholarship.entitlements" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Classes/Colors.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/Colors.swift" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" afterPath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/Pods-Beta_Scholarship.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/Pods-Beta_Scholarship.xcscheme" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/SWRevealViewController.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/SWRevealViewController.xcscheme" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.markdown" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.plist" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-frameworks.sh" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.debug.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/podfile" afterPath="$PROJECT_DIR$/podfile" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Beta_Scholarship-eqqxzhozvwqzgxedlluadffyjxbi/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,90 +50,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_de394474a4e5daefc69dac16f0a38f9c437a9850" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0EBC63B7-3CC4-4056-B93C-544E1DC2CFC7" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyHoursViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift">
+      <file leaf-file-name="MyInfoViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-              <folding>
-                <element signature="e#157#169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudyHoursViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="345" column="36" lean-forward="false" selection-start-line="345" selection-start-column="36" selection-end-line="345" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="60" column="60" lean-forward="false" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectClassViewController.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift">
+      <file leaf-file-name="AppInfoViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="324">
+              <caret line="172" column="79" lean-forward="false" selection-start-line="172" selection-start-column="79" selection-end-line="172" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoundedTextField.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift">
+      <file leaf-file-name="LeadershipViewController.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="159">
+              <caret line="148" column="100" lean-forward="false" selection-start-line="148" selection-start-column="100" selection-end-line="148" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
+      <file leaf-file-name="SettingsTableViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="170" column="52" lean-forward="false" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="52" />
-              <folding>
-                <element signature="e#146#158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnboardingViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="36" />
-              <folding>
-                <element signature="e#160#172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIKit.UIApplication.swift" pinned="false" current-in-tab="false">
-        <entry file="mock:///UIKit.UIApplication.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="809" column="11" lean-forward="false" selection-start-line="809" selection-start-column="11" selection-end-line="809" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudyHoursDetailViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursDetailViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2392">
-              <caret line="41" column="70" lean-forward="false" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+            <state relative-caret-position="143">
+              <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -173,36 +97,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>NameOfUSer</find>
-      <find>pag</find>
-      <find>if let result = task.result</find>
-      <find>viewType</find>
-      <find>getDayOfWeek</find>
-      <find>tableRow</find>
-      <find>[section]![row]</find>
-      <find>let row = indexPath.row - 1</find>
-      <find>@IB</find>
-      <find>place:</find>
-      <find>myPlace</find>
-      <find>sender was</find>
-      <find>pl</find>
-      <find>place</find>
-      <find>UIApplication.shar</find>
-      <find>Onboarding</find>
-      <find>Onboar</find>
-      <find>b4</find>
-      <find>aftr</find>
-      <find>registerDefaults</find>
-      <find>Onboard</find>
-      <find>UIApplication</find>
-      <find>CLLoc</find>
-      <find>rooot</find>
-      <find>case</find>
-      <find>case:</find>
-      <find>c</find>
-      <find>print(</find>
-      <find>launchStoryboard</find>
+      <find>myURL</find>
+      <find>setURL</find>
+      <find>aler</find>
+      <find>url</find>
+      <find>textFieldDidChange</find>
+      <find>first</find>
+      <find>for</find>
+      <find>alert.</find>
+      <find>userHousePositions</find>
+      <find>signInInfo</find>
+      <find>!=</find>
+      <find>!=</find>
+      <find>!= nil</find>
+      <find>regex</find>
+      <find>Int</find>
+      <find>checkTextFields</find>
+      <find>alert</find>
+      <find>checkFormatting</find>
+      <find>birthda</find>
       <find>segue</find>
+      <find>studying:</find>
+      <find>defaults</find>
+      <find>settings</find>
+      <find>d</find>
+      <find>------------- SIGN IN -----------------</find>
+      <find>default</find>
+      <find>download</find>
+      <find>GUCCI</find>
+      <find>sign ou</find>
+      <find>edit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,30 +139,35 @@
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/ShadowButton.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorTableViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusTableViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/RingViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/ForgotPasswordViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/ResetPasswordViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/AWSClass.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/Colors.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/Data.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/PlacePickerViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursDetailViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/DetailTableViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/AccountInfoTableViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/SignInInformation.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" />
       </list>
     </option>
   </component>
@@ -249,9 +178,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="735" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -269,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,11 +225,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="soft wr&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;ui &#9;ACTION&#9;UiDebugger" />
+    <property name="SearchEverywhereHistoryKey" value="soft wra&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;soft wrap&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;wrap&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;softw&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;soft wr&#9;ACTION&#9;EditorToggleUseSoftWraps&#10;ui &#9;ACTION&#9;UiDebugger" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Beta_Scholarship" />
   </component>
@@ -375,12 +303,13 @@
       <workItem from="1520910630317" duration="3740000" />
       <workItem from="1520915521356" duration="28124000" />
       <workItem from="1520953252789" duration="537000" />
-      <workItem from="1520959097389" duration="19420000" />
+      <workItem from="1520959097389" duration="54430000" />
+      <workItem from="1521052490677" duration="59999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120108000" />
+    <option name="totallyTimeSpent" value="215117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -389,10 +318,10 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.45" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.70390624" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.11484375" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35333332" sideWeight="0.8851563" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.29609376" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35866666" sideWeight="0.84296876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -409,13 +338,13 @@
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.45" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.11484375" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35333332" sideWeight="0.8851563" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -441,57 +370,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorTableViewController.swift" />
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/GradientBackgroundView.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ForgotPasswordViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -593,45 +486,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ForgotPasswordViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="79" column="5" lean-forward="false" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -646,20 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -691,25 +535,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="51" column="60" lean-forward="false" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -721,80 +551,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/PlacePickerViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/PlacePickerViewController.swift" />
     <entry file="file://$PROJECT_DIR$/Pods/Charts/Source/Charts/Charts/BarLineChartViewBase.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="69" column="75" lean-forward="false" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursTableView.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursDetailViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2392">
-          <caret line="41" column="70" lean-forward="false" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+        <state relative-caret-position="246">
+          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#157#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="143">
+          <caret line="212" column="26" lean-forward="false" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/DetailTableViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="170" column="52" lean-forward="false" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="52" />
-          <folding>
-            <element signature="e#146#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="e#160#172#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1051">
+          <caret line="98" column="50" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="345" column="36" lean-forward="false" selection-start-line="345" selection-start-column="36" selection-end-line="345" selection-end-column="36" />
+        <state relative-caret-position="161">
+          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="e#160#172#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/AccountInfoTableViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="e#166#178#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="91" column="12" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="91" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="132" column="28" lean-forward="false" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="70" column="65" lean-forward="false" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/SignInInformation.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ConfirmSignUpViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="373" column="56" lean-forward="false" selection-start-line="373" selection-start-column="56" selection-end-line="373" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="383" column="12" lean-forward="false" selection-start-line="383" selection-start-column="12" selection-end-line="383" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="60" column="60" lean-forward="false" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="172" column="79" lean-forward="false" selection-start-line="172" selection-start-column="79" selection-end-line="172" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="148" column="100" lean-forward="false" selection-start-line="148" selection-start-column="100" selection-end-line="148" selection-end-column="100" />
           <folding />
         </state>
       </provider>

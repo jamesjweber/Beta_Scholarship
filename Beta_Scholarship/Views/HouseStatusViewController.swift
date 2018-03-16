@@ -12,25 +12,31 @@ import DeviceKit
 class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet weak var pinNumber: RoundedTextField!
     
     let BrotherStatus:[String] = ["Brother","Pledge","Neophyte"]
-    
     var houseStatus = String()
+    var signInInfo: signInInformation?
+    var brotherStatusSelected = false
+    var isNotBrother = false
+    var pinSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        //tableView.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if let signIn = signInInfo {
+            print("signIn.school.major: \(signIn.school.major)")
+        }
+
         tableView.delegate = self
         tableView.dataSource = self
-        configureButton(button: backButton, view: self)
         configureButton(button: nextButton, view: self)
     }
 
@@ -50,7 +56,6 @@ class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableV
         // #warning Incomplete implementation, return the number of rows
         return BrotherStatus.count
     }
-
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "HouseStatus", for: indexPath)
@@ -68,7 +73,22 @@ class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableV
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
             houseStatus = (cell.textLabel?.text)!
-            print(houseStatus)
+            signInInfo?.beta.brotherStatus = (cell.textLabel?.text)!
+            brotherStatusSelected = true
+            if((cell.textLabel?.text)! == "Brother") {
+                pinNumber.isEnabled = true
+                isNotBrother = false
+            } else {
+                isNotBrother = true
+                pinNumber.isEnabled = false
+            }
+        }
+    }
+    @IBAction func pinNumberChanged(_ sender: RoundedTextField) {
+        signInInfo?.beta.pin = pinNumber.text!
+        
+        if (!pinNumber.isEmpty()) {
+            pinSelected = true
         }
     }
     
@@ -86,54 +106,39 @@ class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableV
             bottomLabel.sizeToFit()
         }
     }
-    
+
     @IBAction func unwindToHouseStatus(segue:UIStoryboardSegue) {
         
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        if ((!pinSelected && !isNotBrother) && !brotherStatusSelected) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
+            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(Ok)
+            self.present(alert, animated: true, completion: nil)
+        } else if (!pinSelected && !isNotBrother) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out the 'PIN' field", preferredStyle: .alert)
+            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(Ok)
+            self.present(alert, animated: true, completion: nil)
+        } else if (!brotherStatusSelected) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please select your house status", preferredStyle: .alert)
+            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(Ok)
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "Brother Status To Probo Level", sender: self)
+        }
     }
-    */
-
-    /* 
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Brother Status To Probo Level" {
+            let proboLevelViewController = segue.destination as! ProboLevelViewController
+            if sender != nil {
+                proboLevelViewController.signInInfo = signInInfo
+            }
+        }
     }
-    */
 
 }

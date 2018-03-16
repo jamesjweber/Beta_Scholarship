@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var navigationController: UINavigationController?
     var storyboard: UIStoryboard?
     var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
-
+    let defaults = UserDefaults.standard
     var pinpoint: AWSPinpoint?
 
     enum StoryboardName : String {
@@ -36,28 +36,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         case Onboarding = "Onboarding"
     }
 
-    /*
+
     func applicationDidFinishLaunching(_ application: UIApplication) {
         // Initialize sign-in
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
     }
-    
-    func application(_ application: UIApplication,
-                     open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+
+    @available(iOS 9.0, *)
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String
+        let annotation = options[UIApplicationOpenURLOptionsKey.annotation]
         return GIDSignIn.sharedInstance().handle(url,
-                                                 sourceApplication: sourceApplication,
-                                                 annotation: annotation)
+                sourceApplication: sourceApplication,
+                annotation: annotation)
     }
-    */
-
-    /* func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        
-        return true
-    } */
-    
-
 
     func launchStoryboard(storyboard: StoryboardName) {
         //UIApplication.shared.setStatusBarHidden(true, with: .slide)
@@ -207,12 +202,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        defaults.set(CACurrentMediaTime(), forKey: "segueTime")
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-
+        defaults.set(CACurrentMediaTime(), forKey: "segueTime")
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -225,6 +221,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:
+        defaults.set(CACurrentMediaTime(), forKey: "segueTime")
     }
 
     // MARK: - Core Data stack
