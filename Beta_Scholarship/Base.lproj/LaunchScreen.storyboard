@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14101" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14086"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,17 +19,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="betaDragon" translatesAutoresizingMaskIntoConstraints="NO" id="xzy-aa-G0E">
-                                <rect key="frame" x="0.0" y="20" width="375" height="444"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vJ7-CX-b4P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47729522323055562" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xzy-aa-G0E" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Bdh-9u-JXe"/>
-                            <constraint firstItem="xzy-aa-G0E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dN0-nF-IHx"/>
-                            <constraint firstItem="xzy-aa-G0E" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.666" id="oEu-Qg-AiJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xzy-aa-G0E" secondAttribute="trailing" id="rxe-3U-AVJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="xzy-aa-G0E" secondAttribute="top" id="wkq-XA-F9X"/>
+                            <constraint firstItem="vJ7-CX-b4P" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="XJF-RD-0ld"/>
+                            <constraint firstItem="vJ7-CX-b4P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bTb-Ed-5p3"/>
+                            <constraint firstItem="vJ7-CX-b4P" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="nJn-iX-nFC"/>
+                            <constraint firstItem="vJ7-CX-b4P" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.25" id="vRt-Yf-PWv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="betaDragon" width="264" height="204"/>
+        <image name="logo" width="94" height="181"/>
     </resources>
 </document>

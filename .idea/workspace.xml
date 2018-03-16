@@ -2,45 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c0854bc-8e9d-4073-bebf-b93e1ed4388e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jamesweber.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Blank.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Blank@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Blank@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Blank.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Play.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Play@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Play.imageset/Play@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/SignInInformation.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/AccountInfoTableViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/ConfirmSignUpViewController.swift" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause.png" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause.png" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@2x.png" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@2x.png" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@3x.png" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Pause.imageset/Pause@3x.png" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/logo.imageset/Asset 1.pdf" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/logo.imageset/Beta Scholarship Logo.pdf" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/logo.imageset/Contents.json" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/logo.imageset/Contents.json" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/LaunchScreen.storyboard" afterPath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/LaunchScreen.storyboard" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" afterPath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/HouseStatusViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" />
       <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/YearAndMajorViewController.swift" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Beta_Scholarship-eqqxzhozvwqzgxedlluadffyjxbi/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0EBC63B7-3CC4-4056-B93C-544E1DC2CFC7" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_de394474a4e5daefc69dac16f0a38f9c437a9850" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MyInfoViewController.swift" pinned="false" current-in-tab="false">
@@ -76,8 +44,8 @@
       <file leaf-file-name="LeadershipViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="148" column="100" lean-forward="false" selection-start-line="148" selection-start-column="100" selection-end-line="148" selection-end-column="100" />
+            <state relative-caret-position="450">
+              <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -304,12 +272,12 @@
       <workItem from="1520915521356" duration="28124000" />
       <workItem from="1520953252789" duration="537000" />
       <workItem from="1520959097389" duration="54430000" />
-      <workItem from="1521052490677" duration="59999000" />
+      <workItem from="1521052490677" duration="64425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215117000" />
+    <option name="totallyTimeSpent" value="219543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -321,7 +289,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.70390624" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.29609376" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35866666" sideWeight="0.84296876" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24533333" sideWeight="0.84296876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -740,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="148" column="100" lean-forward="false" selection-start-line="148" selection-start-column="100" selection-end-line="148" selection-end-column="100" />
+        <state relative-caret-position="450">
+          <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -77,7 +77,7 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
         print(indexPath.section)
         print(indexPath.row)
 
-        if indexPath.section == 2 && indexPath.row == 0 {
+        if indexPath.section == 1 && indexPath.row == 0 {
             print("signing out")
 
             // Sign Out
@@ -93,11 +93,12 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
             self.present(alert, animated: true, completion: nil)
         }
 
+        /*
         if (indexPath.section == 1 && indexPath.row == 1) {
             if (GIDSignIn.sharedInstance().currentUser == nil) {
                 GIDSignIn.sharedInstance().signIn()
             }
-        }
+        }*/
 
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
 

@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14086"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -286,37 +285,12 @@
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="External Accounts" id="i4G-9A-OFZ">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Ndj-MH-9W0" imageView="CpN-rc-GEx" style="IBUITableViewCellStyleDefault" id="eXn-Fd-OHP">
-                                        <rect key="frame" x="0.0" y="198.33333333333334" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eXn-Fd-OHP" id="bm1-rh-tPS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ndj-MH-9W0">
-                                                    <rect key="frame" x="75" y="0.0" width="284" height="43.666666666666664"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="GoogleLogo" id="CpN-rc-GEx">
-                                                    <rect key="frame" x="16" y="0.0" width="44" height="43.666666666666664"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="0oa-6C-aL6" kind="show" id="Tzv-F2-5Z0"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
+                                <cells/>
                             </tableViewSection>
                             <tableViewSection id="j9N-bS-xAJ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pCD-DF-cWU" style="IBUITableViewCellStyleDefault" id="k52-WY-riP">
-                                        <rect key="frame" x="0.0" y="278.33333333333337" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="234.33333333333337" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k52-WY-riP" id="8ej-aQ-c2O">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
@@ -988,10 +962,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jyM-Dq-Bdw">
-                                <rect key="frame" x="0.0" y="140" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="ATV-Y2-rTu"/>
+                                    <constraint firstAttribute="height" id="ATV-Y2-rTu"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2Tx-E5-g2L">
                                     <size key="itemSize" width="335" height="175"/>
@@ -1001,10 +975,8 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myDataCell" id="6UU-6w-Gwu" customClass="SectionCollectionViewCell" customModule="Beta_Scholarship" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="12.666666666666666" width="335" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfd-xw-MfQ">
@@ -1092,7 +1064,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RXF-y2-Lb9" customClass="MyHoursTableView" customModule="Beta_Scholarship" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="348" width="375" height="381"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Week Total" textLabel="Pqo-oh-bZf" style="IBUITableViewCellStyleDefault" id="AkR-LR-ezo">
@@ -1149,7 +1121,7 @@
                             <constraint firstItem="zld-1d-QRV" firstAttribute="trailing" secondItem="RXF-y2-Lb9" secondAttribute="trailing" id="ZwL-8t-PF2"/>
                             <constraint firstItem="zld-1d-QRV" firstAttribute="trailing" secondItem="jyM-Dq-Bdw" secondAttribute="trailing" id="mWP-Un-DVj"/>
                             <constraint firstItem="jyM-Dq-Bdw" firstAttribute="leading" secondItem="zld-1d-QRV" secondAttribute="leading" id="oxn-V8-H3Z"/>
-                            <constraint firstItem="RXF-y2-Lb9" firstAttribute="firstBaseline" secondItem="jyM-Dq-Bdw" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="wZy-EV-mg1"/>
+                            <constraint firstItem="RXF-y2-Lb9" firstAttribute="firstBaseline" secondItem="jyM-Dq-Bdw" secondAttribute="baseline" id="wZy-EV-mg1"/>
                             <constraint firstItem="RXF-y2-Lb9" firstAttribute="leading" secondItem="zld-1d-QRV" secondAttribute="leading" id="zAY-ap-fTs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zld-1d-QRV"/>
@@ -2759,7 +2731,6 @@
     <resources>
         <image name="Blank" width="167" height="167"/>
         <image name="Faux Progress Bars" width="286" height="53"/>
-        <image name="GoogleLogo" width="2160" height="2160"/>
         <image name="Location" width="250" height="250"/>
         <image name="Timer Button" width="54" height="21"/>
         <image name="bookGlyph" width="30" height="30"/>

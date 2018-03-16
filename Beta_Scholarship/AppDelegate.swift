@@ -123,9 +123,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             launchStoryboard(storyboard: StoryboardName.Main)
         }
 
-        let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        /* let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
         UIApplication.shared.registerUserNotificationSettings(settings)
-        UIApplication.shared.registerForRemoteNotifications()
+        UIApplication.shared.registerForRemoteNotifications() */
 
         return true
     }
