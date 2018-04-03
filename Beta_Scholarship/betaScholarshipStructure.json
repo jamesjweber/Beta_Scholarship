@@ -1,0 +1,43 @@
+{
+  "Semester" : {
+    "Title" : "Spring 2019",
+
+    "BeginDate" : "01/09/2018",
+    "EndDate" :  "05/05/2018",
+
+    "DayOfEndOfWeek" : "Sunday",
+
+    "Weeks": [{
+      "Users" : {
+        "Probo1" : [
+          {
+            "Name" : ["James", "Weber"],
+            "Address": "---",
+            "Birthdate" : "---",
+            "Phone" : "---",
+            "ContactEmail" : "---",
+            "AppEmail" : "---",
+            "Year" : "---",
+            "Major" : "---",
+            "HousePositions" : ["x","y","z"],
+            "ProboLevel" : 1,
+            "UUID" : "b529025b1-4e7e-444a-9c5f-d678af306415",
+            "Study Hours" : {
+              "Total Hours": 11.5,
+              "Log" : [{
+                "Date" : "01/12/2018",
+                "Location" : "Hicks",
+                "Subject" : "ECE 368",
+                "Time" : 11.5
+              }]
+            }
+          }
+        ]
+        "Probo2" : [],
+        "Probo3" : [],
+        "Default" : [],
+        "Privileged" : []
+      }
+    }]
+  }
+}

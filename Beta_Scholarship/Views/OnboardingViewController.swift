@@ -60,7 +60,7 @@ class OnboardingViewController: UIViewController {
                 Settings.groupDefaults().set(true, forKey: onboardingKey)
                 //now load the main storyboard
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                appDelegate.launchStoryboard(storyboard: .Main)
+                //appDelegate.launchStoryboard(storyboard: .Main)
 
                 return
             }

@@ -23,6 +23,7 @@
 		19A5D54E20583EE30025A792 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5D54D20583EE30025A792 /* OnboardingViewController.swift */; };
 		19A5D550205856810025A792 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A5D54F205856810025A792 /* Onboarding.storyboard */; };
 		19A5D553205902080025A792 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5D552205902080025A792 /* TimerViewController.swift */; };
+		19A97203205C798D004D791C /* ScholarshipCommitteeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A97202205C798D004D791C /* ScholarshipCommitteeTableViewController.swift */; };
 		19AA41DF204FC9C80067D2D6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */; };
 		19AA41E1204FE4C60067D2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19AA41E0204FE4C50067D2D6 /* GoogleService-Info.plist */; };
 		19AD40B1203D307A00421765 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD40B0203D307A00421765 /* GradientBackgroundView.swift */; };
@@ -32,7 +33,8 @@
 		19B4531A2059C5AE00912481 /* AccountInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B453192059C5AE00912481 /* AccountInfoTableViewController.swift */; };
 		19B4531E205AE2A900912481 /* SignInInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4531D205AE2A900912481 /* SignInInformation.swift */; };
 		19B45320205B2D6400912481 /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4531F205B2D6400912481 /* ConfirmSignUpViewController.swift */; };
-		19C85733204D1E800002BA22 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 19C85732204D1E800002BA22 /* awsconfiguration.json */; };
+		19C9A444205CA7B500F29DFE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9A443205CA7B500F29DFE /* MainTabBarViewController.swift */; };
+		19C9A446205CF3DC00F29DFE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9A445205CF3DC00F29DFE /* DetailsViewController.swift */; };
 		19D694421FFE039700D671CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D694411FFE039700D671CF /* AppDelegate.swift */; };
 		19D694471FFE039700D671CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D694451FFE039700D671CF /* Main.storyboard */; };
 		19D6944A1FFE039700D671CF /* Beta_Scholarship.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19D694481FFE039700D671CF /* Beta_Scholarship.xcdatamodeld */; };
@@ -45,7 +47,9 @@
 		3906035268EE7AFDC728E6E8 /* HouseStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906033BA965D58C2C3B74BB /* HouseStatusViewController.swift */; };
 		390607811EABBB95A18036B7 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39060FFBAA46F504FB6D14EE /* AppInfoViewController.swift */; };
 		3906098780665248CA0DC733 /* LeadershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39060279E8A49AFBB871A033 /* LeadershipViewController.swift */; };
+		39060AFC64B70928CF22ADF0 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3906007DEFC32D3E794ED1C5 /* awsconfiguration.json */; };
 		39060C978B5A336ADC0493C9 /* TimePerClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906032366BD13B034039843 /* TimePerClassViewController.swift */; };
+		39060E665A27CA289BE05813 /* betaScholarshipStructure.json in Resources */ = {isa = PBXBuildFile; fileRef = 39060C7851025E87F1538AC8 /* betaScholarshipStructure.json */; };
 		FAC665C12BA17F204FBE4683 /* Pods_Beta_Scholarship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31EF20ECD9CA521C667A38 /* Pods_Beta_Scholarship.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +84,7 @@
 		19A5D54D20583EE30025A792 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		19A5D54F205856810025A792 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		19A5D552205902080025A792 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		19A97202205C798D004D791C /* ScholarshipCommitteeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarshipCommitteeTableViewController.swift; sourceTree = "<group>"; };
 		19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		19AA41E0204FE4C50067D2D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19AD40B0203D307A00421765 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
@@ -89,7 +94,8 @@
 		19B453192059C5AE00912481 /* AccountInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoTableViewController.swift; sourceTree = "<group>"; };
 		19B4531D205AE2A900912481 /* SignInInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInformation.swift; sourceTree = "<group>"; };
 		19B4531F205B2D6400912481 /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
-		19C85732204D1E800002BA22 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		19C9A443205CA7B500F29DFE /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		19C9A445205CF3DC00F29DFE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		19D6943E1FFE039700D671CF /* Beta_Scholarship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beta_Scholarship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D694411FFE039700D671CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D694461FFE039700D671CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,11 +105,13 @@
 		19DA69AA20565760007331E8 /* MyHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoursViewController.swift; sourceTree = "<group>"; };
 		19ED92CB204BE06D003F48E4 /* RoundedButtonProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonProperties.swift; sourceTree = "<group>"; };
 		19EDBE9C204137C700459F74 /* YearAndMajorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearAndMajorViewController.swift; sourceTree = "<group>"; };
+		3906007DEFC32D3E794ED1C5 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		3906014ABF7817C7DE762233 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		39060279E8A49AFBB871A033 /* LeadershipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadershipViewController.swift; sourceTree = "<group>"; };
 		3906032366BD13B034039843 /* TimePerClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePerClassViewController.swift; sourceTree = "<group>"; };
 		3906033BA965D58C2C3B74BB /* HouseStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseStatusViewController.swift; sourceTree = "<group>"; };
 		390604D25182B3764DAA852C /* ProboLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProboLevelViewController.swift; sourceTree = "<group>"; };
+		39060C7851025E87F1538AC8 /* betaScholarshipStructure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = betaScholarshipStructure.json; sourceTree = "<group>"; };
 		39060FFBAA46F504FB6D14EE /* AppInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		3F31EF20ECD9CA521C667A38 /* Pods_Beta_Scholarship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beta_Scholarship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB0F307E589AA52DF708FF3 /* Pods-Beta_Scholarship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beta_Scholarship.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				1944695E204FEBD90058FB13 /* Beta_Scholarship.entitlements */,
-				19C85732204D1E800002BA22 /* awsconfiguration.json */,
 				19D694571FFE049900D671CF /* Classes */,
 				19D694561FFE048E00D671CF /* Views */,
 				19D694411FFE039700D671CF /* AppDelegate.swift */,
@@ -156,6 +163,8 @@
 				19AA41E0204FE4C50067D2D6 /* GoogleService-Info.plist */,
 				19D694481FFE039700D671CF /* Beta_Scholarship.xcdatamodeld */,
 				39060B08F216B20D67BABF2B /* Config */,
+				3906007DEFC32D3E794ED1C5 /* awsconfiguration.json */,
+				39060C7851025E87F1538AC8 /* betaScholarshipStructure.json */,
 			);
 			path = Beta_Scholarship;
 			sourceTree = "<group>";
@@ -184,6 +193,9 @@
 				19A5D552205902080025A792 /* TimerViewController.swift */,
 				19B453192059C5AE00912481 /* AccountInfoTableViewController.swift */,
 				19B4531F205B2D6400912481 /* ConfirmSignUpViewController.swift */,
+				19A97202205C798D004D791C /* ScholarshipCommitteeTableViewController.swift */,
+				19C9A443205CA7B500F29DFE /* MainTabBarViewController.swift */,
+				19C9A445205CF3DC00F29DFE /* DetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,12 +312,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19C85733204D1E800002BA22 /* awsconfiguration.json in Resources */,
 				19D6944F1FFE039700D671CF /* LaunchScreen.storyboard in Resources */,
 				19AA41E1204FE4C60067D2D6 /* GoogleService-Info.plist in Resources */,
 				19A5D550205856810025A792 /* Onboarding.storyboard in Resources */,
 				1911807D201DAFD3002C7A51 /* Assets.xcassets in Resources */,
 				19D694471FFE039700D671CF /* Main.storyboard in Resources */,
+				39060AFC64B70928CF22ADF0 /* awsconfiguration.json in Resources */,
+				39060E665A27CA289BE05813 /* betaScholarshipStructure.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +436,10 @@
 				192DD07F2057ED18001C76E4 /* SelectClassViewController.swift in Sources */,
 				19D694421FFE039700D671CF /* AppDelegate.swift in Sources */,
 				19AFA5B7203E7EC5004C6BF6 /* ForgotPasswordViewController.swift in Sources */,
+				19A97203205C798D004D791C /* ScholarshipCommitteeTableViewController.swift in Sources */,
 				19B29D21203C083900688100 /* SignInViewController.swift in Sources */,
+				19C9A444205CA7B500F29DFE /* MainTabBarViewController.swift in Sources */,
+				19C9A446205CF3DC00F29DFE /* DetailsViewController.swift in Sources */,
 				1997609B2054C7A0001D5C5F /* AWSClass.swift in Sources */,
 				19B29D23203C128F00688100 /* RoundedTextField.swift in Sources */,
 				19A5D553205902080025A792 /* TimerViewController.swift in Sources */,
@@ -596,6 +612,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AT7FQ5S2Z;
 				INFOPLIST_FILE = Beta_Scholarship/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.James.Beta-Theta-Pi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -614,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AT7FQ5S2Z;
 				INFOPLIST_FILE = Beta_Scholarship/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.James.Beta-Theta-Pi";
 				PRODUCT_NAME = "$(TARGET_NAME)";

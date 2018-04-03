@@ -55,7 +55,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
         }
     }
     let defaults = UserDefaults.standard
-    var segueTime:CFTimeInterval?
+    var segueTime:Double?
 
     var user: AWSCognitoIdentityUser?
     var pool: AWSCognitoIdentityUserPool?
@@ -102,7 +102,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if(studying && !paused){
-            defaults.set(CACurrentMediaTime(), forKey: "segueTime")
+            defaults.set(Calendar.current.component(.nanosecond, from: Date()), forKey: "segueTime")
         }
         if(timerCounter != nil){
             timerCounter!.invalidate()
@@ -117,7 +117,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
         paused = defaults.object(forKey: "paused") as? Bool ?? Bool()
         studying = defaults.object(forKey: "studying") as? Bool ?? Bool()
         totalTime = defaults.object(forKey: "totalTime") as? Int ?? Int()
-        segueTime = defaults.object(forKey: "segueTime") as? CFTimeInterval ?? CACurrentMediaTime()
+        segueTime = defaults.object(forKey: "segueTime") as? Double ?? Date().timeIntervalSince1970
 
         print("----------- DEFAULTS ------------")
         print("paused: \(paused)")
@@ -143,16 +143,16 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
     }
 
 
-    func additionalTime(_ segueTime: CFTimeInterval) -> Int {
-        let currentTime = CACurrentMediaTime()
+    func additionalTime(_ segueTime: Double) -> Int {
+        let currentTime = Date().timeIntervalSince1970
 
-        var difference: Int = Int(currentTime - segueTime)
-
+        let difference: Int = Int(currentTime - segueTime)
+        
         print("currentTime: \(currentTime)")
         print("segueTime: \(segueTime)")
         print("difference: \(difference)")
 
-        return difference
+        return Int(difference)
     }
 
     @IBAction func startStudyingSubmitHoursPressed(_ sender: Any) {
@@ -249,6 +249,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
         formatTime(time: totalTime)
         totalTime += 1
         timerRing.animateTo(Double(totalTime) / 36)
+        defaults.set(Date().timeIntervalSince1970, forKey: "segueTime")
     }
 
     func formatTime(time: Int) -> Double {

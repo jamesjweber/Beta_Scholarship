@@ -1,1 +1,35 @@
-{"UserAgent":"MobileHub/1.0","Version":"1.0","CredentialsProvider":{"CognitoIdentity":{"Default":{"PoolId":"us-east-1:bb023064-cbc1-40da-8cfc-84cc04d5485f","Region":"us-east-1"}}},"IdentityManager":{"Default":{}},"PinpointAnalytics":{"Default":{"AppId":"4a704ed3ec6d4f1b9a5254100774f71a","Region":"us-east-1"}},"PinpointTargeting":{"Default":{"Region":"us-east-1"}}}
+{
+  "UserAgent": "MobileHub/1.0",
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "us-east-1:bb023064-cbc1-40da-8cfc-84cc04d5485f",
+        "Region": "us-east-1"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {
+    }
+  },
+  "CognitoUserPool": {
+    "Default": {
+      "PoolId": "us-east-1_TqwJbw9rG",
+      "AppClientId": "2h16i9ddmalaugcah8d3qtmoi2",
+      "AppClientSecret": "15j0a3itiu1itq737kjq3e7tcdc3cf3m4fadbck6rk593h9k52vh",
+      "Region": "us-east-1"
+    }
+  },
+  "PinpointAnalytics": {
+    "Default": {
+      "AppId": "4a704ed3ec6d4f1b9a5254100774f71a",
+      "Region": "us-east-1"
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-east-1"
+    }
+  }
+}

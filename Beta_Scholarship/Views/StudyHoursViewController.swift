@@ -49,13 +49,11 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     var weekHours: Double = 0
 
     let defaults = UserDefaults.standard
-    let cache = NSCache<NSString, userInformation>()
+    //let cache = NSCache<NSString, userInformation>()
     var myPlace:GMSPlace?
     var classDescription: String?
 
     override func viewDidLoad() {
-        locationManager.requestWhenInUseAuthorization()
-
         super.viewDidLoad()
 
         loadDefaults()
@@ -114,16 +112,16 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
                     // task.result before it can get user info.
                     //
                     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-                    if let cachedUserInfo = self.cache.object(forKey: "CachedObject") {
+                    /*if let cachedUserInfo = self.cache.object(forKey: "CachedObject") {
                         // use the cached version
                         print("getting cached userinfo")
                         self.userInfo = cachedUserInfo
                     } else {
                         // create it from scratch then store in the cache
-                        print("cacheing")
-                        self.userInfo = userInformation(self.response!)
-                        self.cache.setObject(self.userInfo!, forKey: "CachedObject")
-                    }
+                        print("cacheing") */
+                    self.userInfo = userInformation(self.response!)
+                        //self.cache.setObject(self.userInfo!, forKey: "CachedObject")
+                    //}
                     
                     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
                     //
@@ -270,7 +268,28 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func startStudying(_ sender: Any) {
-        openPlacePicker()
+        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            switch CLLocationManager.authorizationStatus() {
+            case .notDetermined, .restricted, .denied:
+                let alertController = UIAlertController(title: "Location Services Required",
+                                                        message: "Location services permissions were not authorized. Please enable it in Settings to start studying.",
+                                                        preferredStyle: .alert)
+                
+                let settingsAction = UIAlertAction(title: "Settings", style: .cancel) { (alertAction) in
+                    
+                    // THIS IS WHERE THE MAGIC HAPPENS!!!!
+                    if let appSettings = URL(string: UIApplicationOpenSettingsURLString) {
+                        UIApplication.shared.open(appSettings, completionHandler: nil)
+                    }
+                }
+                alertController.addAction(settingsAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            case .authorizedAlways, .authorizedWhenInUse:
+                openPlacePicker()
+            }
+        }
     }
 
     func compareCoordinates(_ cllc2d1 : CLLocationCoordinate2D, _ cllc2d2 : CLLocationCoordinate2D) -> Bool {
