@@ -16,7 +16,7 @@ class YearAndMajorViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var major: RoundedTextField!
     
-    let YearInSchool:[String] = ["Freshman","Sophomore","Junior","Senior"]
+    let YearInSchool:[String] = ["Freshman","Sophomore","Junior","Senior","Other"]
     var year = String()
     var signInInfo: signInInformation?
     
@@ -103,24 +103,24 @@ class YearAndMajorViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     @IBAction func nextButtonTouched(_ sender: UIButton) {
-        if (!majorSelected && !yearSelected) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
-            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(Ok)
-            self.present(alert, animated: true, completion: nil)
-        } else if (!yearSelected) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please select your year in school", preferredStyle: .alert)
-            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(Ok)
-            self.present(alert, animated: true, completion: nil)
-        } else if (!majorSelected) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please fill out the 'Major' field", preferredStyle: .alert)
-            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(Ok)
-            self.present(alert, animated: true, completion: nil)
-        } else {
-            performSegue(withIdentifier: "Year And Major To Brother Status", sender: self)
-        }
+//        if (!majorSelected && !yearSelected) {
+//            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
+//            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+//            alert.addAction(Ok)
+//            self.present(alert, animated: true, completion: nil)
+//        } else if (!yearSelected) {
+//            let alert = UIAlertController(title: "Missing Information", message: "Please select your year in school", preferredStyle: .alert)
+//            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+//            alert.addAction(Ok)
+//            self.present(alert, animated: true, completion: nil)
+//        } else if (!majorSelected) {
+//            let alert = UIAlertController(title: "Missing Information", message: "Please fill out the 'Major' field", preferredStyle: .alert)
+//            let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+//            alert.addAction(Ok)
+//            self.present(alert, animated: true, completion: nil)
+//        } else {
+        performSegue(withIdentifier: "Year And Major To Brother Status", sender: self)
+//        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

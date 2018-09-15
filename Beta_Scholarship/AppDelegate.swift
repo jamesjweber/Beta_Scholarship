@@ -104,11 +104,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         pool.delegate = self
 
         // Smart Keyboards
-        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.shared.enable = true
 
         // Add Google Maps and Places Services
-        GMSPlacesClient.provideAPIKey("AIzaSyDiDa0xyWG2_rkrMQAPbc3kIM4r_CP1XDc")
-        GMSServices.provideAPIKey("AIzaSyDiDa0xyWG2_rkrMQAPbc3kIM4r_CP1XDc")
+        GMSPlacesClient.provideAPIKey("AIzaSyDj6NAEMKN_xDbLlTYxF6aBmKIh4WXdHXI")
+        GMSServices.provideAPIKey("AIzaSyDj6NAEMKN_xDbLlTYxF6aBmKIh4WXdHXI")
 
         
         /* print("b4")
@@ -286,10 +286,11 @@ extension AppDelegate: AWSCognitoIdentityInteractiveAuthenticationDelegate {
         }
 
         DispatchQueue.main.async {
+            
             self.navigationController!.popToRootViewController(animated: true)
-            if (!self.navigationController!.isViewLoaded /*|| self.navigationController!.view.window == nil*/) {
+            if (!self.navigationController!.isViewLoaded) {
                 print("!self.navigationController!.isViewLoaded: \(!self.navigationController!.isViewLoaded)")
-                    print("self.navigationController!.view.window == nil: \(self.navigationController!.view.window == nil)")
+                print("self.navigationController!.view.window == nil: \(self.navigationController!.view.window == nil)")
                 print("Triggered?")
                 self.window?.rootViewController?.present(self.navigationController!, animated: true, completion: nil)
             }

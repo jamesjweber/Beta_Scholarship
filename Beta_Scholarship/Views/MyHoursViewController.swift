@@ -115,7 +115,7 @@ class MyHoursViewController: UIViewController, UITableViewDataSource, UITableVie
                             if let result = task.result {//(task.result != nil) {
                                 self.pagniatedOutput = result
                             }
-                            print("DAWG")
+
                             self.tableRows?.removeAll(keepingCapacity: true)
 
                             if self.pagniatedOutput != nil{

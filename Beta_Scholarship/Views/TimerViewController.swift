@@ -22,10 +22,11 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
             timerText.font = UIFont.monospacedDigitSystemFont(ofSize: timerText.font.pointSize, weight: UIFont.Weight.ultraLight)
         }
     }
-    @IBOutlet weak var timerRing: MKRingProgressView!
+    @IBOutlet weak var timerRing: RingProgressView!
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var startStudyingSubmitHoursButton: UIButton!
     @IBOutlet weak var discardHoursButton: UIButton!
+    @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var imgWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var imgHeightConstraint: NSLayoutConstraint!
@@ -79,6 +80,11 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
         if (self.user == nil) {
             self.user = self.pool?.currentUser()
         }
+        
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        
+        timerLabel.font = timerLabel.font.withSize(screenWidth / 6.3)
 
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
             DispatchQueue.main.async(execute: {
@@ -102,7 +108,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if(studying && !paused){
-            defaults.set(Calendar.current.component(.nanosecond, from: Date()), forKey: "segueTime")
+            defaults.set(Date().timeIntervalSince1970, forKey: "segueTime")
         }
         if(timerCounter != nil){
             timerCounter!.invalidate()
@@ -111,7 +117,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
     }
 
     func loadDefaults() {
-        locationName = defaults.string(forKey: "locationName") as? String ?? String()
+        locationName = defaults.string(forKey: "locationName") as? String ?? "N/A"
         classDescription = defaults.string(forKey: "classDescription")  as? String ?? String()
 
         paused = defaults.object(forKey: "paused") as? Bool ?? Bool()
@@ -146,11 +152,11 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
     func additionalTime(_ segueTime: Double) -> Int {
         let currentTime = Date().timeIntervalSince1970
 
-        let difference: Int = Int(currentTime - segueTime)
+        let difference: Int = Int(round(currentTime - segueTime))
         
-        print("currentTime: \(currentTime)")
-        print("segueTime: \(segueTime)")
-        print("difference: \(difference)")
+        print("currentTime:\t\(currentTime)")
+        print("segueTime:\t\t\(segueTime)")
+        print("difference:\t\t\(difference)")
 
         return Int(difference)
     }
@@ -198,7 +204,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
         let alertController = UIAlertController(title: "Are you sure?", message: "Please confirm that you would like to DISCARD these hours", preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel) { (alertAction) in
-            
+        
             if(!pauseState) { self.startTimer() } // If it was not paused going in, unpause
             
         })
@@ -395,7 +401,7 @@ class TimerViewController: UIViewController, EPSignatureDelegate{
         tableRow?.Probo_Level = proboLevel! as String?
         tableRow?.Class = classDescription as String?
         tableRow?.Location = locationName
-        tableRow?.Week = (day/7 - 1) as NSNumber?
+        tableRow?.Week = (day/7 - 32) as NSNumber?
         tableRow?.SigURL = signatureURL
 
         self.insertTableRow(tableRow!)

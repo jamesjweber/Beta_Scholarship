@@ -2,42 +2,403 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c0854bc-8e9d-4073-bebf-b93e1ed4388e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash.imageset/trash.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash.imageset/trash@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash.imageset/trash@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash_white.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash_white.imageset/trash_white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash_white.imageset/trash_white@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/trash_white.imageset/trash_white@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/DetailsViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MainTabBarViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/ScholarshipCommitteeTableViewController.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Beta_Scholarship/betaScholarshipStructure.json" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jamesweber.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jamesweber.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" afterPath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" />
-      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/awsconfiguration.json" afterPath="$PROJECT_DIR$/Beta_Scholarship/awsconfiguration.json" />
+      <change afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button Disabled.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button Disabled.imageset/TimerButtonDisabled.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/TimerButton.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship.xcworkspace/xcuserdata/jamesweber.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Assets.xcassets/Timer Button.imageset/Timer Button@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUser.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUser.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUserPool.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUserPool.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderModel.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderModel.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderResources.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderResources.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderService.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/CognitoIdentityProvider/AWSCognitoIdentityProviderService.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/Internal/AWSCognitoIdentityProviderSrpHelper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/Internal/AWSCognitoIdentityProviderSrpHelper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/Internal/NSData+AWSCognitoIdentityProvider.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/Internal/NSData+AWSCognitoIdentityProvider.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Authentication/AWSSignature.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Authentication/AWSSignature.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Bolts/AWSTask.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Bolts/AWSTask.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityModel.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityModel.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityResources.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityResources.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/CognitoIdentity/AWSCognitoIdentityService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/FMDB/AWSFMDatabase.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/FMDB/AWSFMDatabase.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/FMDB/AWSFMResultSet.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/FMDB/AWSFMResultSet.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDASLLogCapture.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDASLLogCapture.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDASLLogger.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDASLLogger.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDAbstractDatabaseLogger.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDAbstractDatabaseLogger.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDFileLogger.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDFileLogger.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDLog.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDLog.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDLog.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDLog.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDOSLogger.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDOSLogger.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDTTYLogger.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/AWSDDTTYLogger.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Logging/Extensions/AWSDDMultiFormatter.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Networking/AWSNetworking.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Networking/AWSNetworking.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Networking/AWSURLSessionManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Networking/AWSURLSessionManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/STS/AWSSTSModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/STS/AWSSTSModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/STS/AWSSTSResources.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/STS/AWSSTSResources.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/STS/AWSSTSService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/STS/AWSSTSService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Serialization/AWSSerialization.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Serialization/AWSSerialization.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Serialization/AWSURLRequestSerialization.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Serialization/AWSURLRequestSerialization.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Serialization/AWSURLResponseSerialization.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Serialization/AWSURLResponseSerialization.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Service/AWSInfo.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Service/AWSInfo.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Service/AWSService.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Service/AWSService.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Service/AWSServiceEnum.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Service/AWSServiceEnum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/TMCache/AWSTMDiskCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/TMCache/AWSTMDiskCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/TMCache/AWSTMMemoryCache.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/TMCache/AWSTMMemoryCache.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/UICKeyChainStore/AWSUICKeyChainStore.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/UICKeyChainStore/AWSUICKeyChainStore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/UICKeyChainStore/AWSUICKeyChainStore.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/UICKeyChainStore/AWSUICKeyChainStore.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Utility/AWSCategory.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Utility/AWSCategory.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Utility/AWSLogging.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/Utility/AWSLogging.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/XMLWriter/AWSXMLWriter.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/AWSCore/XMLWriter/AWSXMLWriter.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSCore/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSCore/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBModel.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBModel.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBObjectMapper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBObjectMapper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBResources.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBResources.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBService.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/AWSDynamoDB/AWSDynamoDBService.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSDynamoDB/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSDynamoDB/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointAnalytics/AWSPinpointAnalyticsService.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointAnalytics/AWSPinpointAnalyticsService.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointEndpointProfile.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointEndpointProfile.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointEvent.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointEvent.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointEventRecorder.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointEventRecorder.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointSessionClient.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointSessionClient.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointTargeting/AWSPinpointTargetingService.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointTargeting/AWSPinpointTargetingService.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointTargetingClient.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/AWSPinpoint/AWSPinpointTargetingClient.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSPinpoint/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSPinpoint/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Model.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Model.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3PreSignedURL.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3PreSignedURL.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3RequestRetryHandler.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3RequestRetryHandler.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Resources.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Resources.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Service.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Service.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Service.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3Service.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility+Validation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility+Validation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility+Validation.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility+Validation.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/AWSS3/AWSS3TransferUtility.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/AWSS3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/AWSS3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/DeviceKit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/DeviceKit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/DeviceKit/Source/Device.generated.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/DeviceKit/Source/Device.generated.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/EPSignature/Pod/Classes/EPSignatureViewController.xib" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/EPSignature/Pod/Classes/EPSignatureViewController.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMMIMEDocument.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMMIMEDocument.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarObjects.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarObjects.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarObjects.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarObjects.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarQuery.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarQuery.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarQuery.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/Objects/GTLRObject.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/Objects/GTLRObject.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/Objects/GTLRService.m" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleAPIClientForREST/Source/Objects/GTLRService.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/GoogleMapsBase" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/GoogleMapsBase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/CHANGELOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Example/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Example/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/GoogleMaps" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/GoogleMaps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_AU.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_AU.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_IN.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_IN.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_419.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_419.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_MX.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_MX.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr_CA.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr_CA.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hi.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hi.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/iw.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/iw.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lt.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lt.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lv.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lv.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nb.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nb.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture_dim.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture_dim.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_BR.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_BR.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_HK.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_HK.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/oss_licenses_maps.txt.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/oss_licenses_maps.txt.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/GoogleMapsCore" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/GoogleMapsCore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlacePicker/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlacePicker/CHANGELOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlacePicker/Example/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlacePicker/Example/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/GooglePlacePicker" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/GooglePlacePicker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle/lt.lproj/GooglePlacePicker.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle/lt.lproj/GooglePlacePicker.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle/lv.lproj/GooglePlacePicker.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle/lv.lproj/GooglePlacePicker.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/CHANGELOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Example/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Example/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/GooglePlaces" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/GooglePlaces" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lt.lproj/GooglePlaces.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lt.lproj/GooglePlaces.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lv.lproj/GooglePlaces.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lv.lproj/GooglePlaces.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/oss_licenses_places.txt.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/oss_licenses_places.txt.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQTextView/IQTextView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQTextView/IQTextView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/IQKeyboardManagerSwift/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MKRingProgressView/MKRingProgressView/MKGradientGenerator.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/MKRingProgressView/MKRingProgressView/MKGradientGenerator.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MKRingProgressView/MKRingProgressView/MKRingProgressView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/MKRingProgressView/MKRingProgressView/MKRingProgressView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MKRingProgressView/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/MKRingProgressView/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorShape.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/NVActivityIndicatorView/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSCognitoIdentityProvider.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSCognitoIdentityProvider.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSCognitoIdentityProviderASF.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSCognitoIdentityProviderASF.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSCore.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSCore.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSDynamoDB.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSDynamoDB.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSPinpoint.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSPinpoint.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSS3.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/AWSS3.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/DeviceKit.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/DeviceKit.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/EPSignature.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/EPSignature.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GTMOAuth2.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GTMOAuth2.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GTMSessionFetcher.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GTMSessionFetcher.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GoogleAPIClientForREST.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GoogleAPIClientForREST.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GoogleToolboxForMac.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/GoogleToolboxForMac.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/IQKeyboardManagerSwift.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/IQKeyboardManagerSwift.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/MKRingProgressView.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/MKRingProgressView.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/NVActivityIndicatorView.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/NVActivityIndicatorView.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/Pods-Beta_Scholarship.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/Pods-Beta_Scholarship.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/SWRevealViewController.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/SWRevealViewController.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/jamesweber.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSCognitoIdentityProvider/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSCognitoIdentityProvider/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSCore/AWSCore.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSCore/AWSCore.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSCore/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSCore/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSDynamoDB/AWSDynamoDB.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSDynamoDB/AWSDynamoDB.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSDynamoDB/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSDynamoDB/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSPinpoint/AWSPinpoint.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSPinpoint/AWSPinpoint.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSPinpoint/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSPinpoint/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSS3/AWSS3-umbrella.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSS3/AWSS3-umbrella.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSS3/AWSS3.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSS3/AWSS3.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AWSS3/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/AWSS3/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/DeviceKit/DeviceKit.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/DeviceKit/DeviceKit.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/DeviceKit/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/DeviceKit/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/EPSignature/EPSignature.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/EPSignature/EPSignature.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/EPSignature/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/EPSignature/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GTMOAuth2/GTMOAuth2.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GTMOAuth2/GTMOAuth2.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleAPIClientForREST/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleAPIClientForREST/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManagerSwift/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManagerSwift/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MKRingProgressView/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/MKRingProgressView/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MKRingProgressView/MKRingProgressView.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/MKRingProgressView/MKRingProgressView.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/NVActivityIndicatorView/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/NVActivityIndicatorView/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship-resources.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Beta_Scholarship/Pods-Beta_Scholarship.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SWRevealViewController/SWRevealViewController.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/SWRevealViewController/SWRevealViewController.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podfile" beforeDir="false" afterPath="$PROJECT_DIR$/podfile" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Beta_Scholarship-eqqxzhozvwqzgxedlluadffyjxbi/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_de394474a4e5daefc69dac16f0a38f9c437a9850" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1231681790">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="swift" value="115" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Swift" value="115" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.appcode.build">
+        <counts>
+          <entry key="buildservice" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.cidr.testingFrameworks.usages" />
+      <usages-collector id="statistics.file.types.open" />
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="awsconfiguration.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/awsconfiguration.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="16" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="248" column="8" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
+              <folding>
+                <element signature="e#160#172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="397" column="36" selection-start-line="397" selection-start-column="36" selection-end-line="397" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1455">
+              <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="20" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -46,21 +407,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user.</find>
-      <find>duh</find>
-      <find>dhu:</find>
-      <find>archer:</find>
-      <find>result [</find>
-      <find>users:</find>
-      <find>poolId</find>
-      <find>userInfo</find>
-      <find>pinpoint</find>
-      <find>.continue</find>
-      <find>func refresh()</find>
-      <find>bee</find>
-      <find>AWSCognitoIdentityProvider</find>
-      <find>import AWSCognitoIdentityProvider</find>
-      <find>users</find>
       <find>BEE4</find>
       <find>4a704ed3ec6d4f1b9a5254100774f71a</find>
       <find>response</find>
@@ -76,7 +422,25 @@
       <find>AWSCognitoUserPoolsSignInProviderKey</find>
       <find>deselect</find>
       <find>didDeselectRowAt</find>
+      <find>MKRingProgressView</find>
+      <find>resetAnimation</find>
+      <find>ringView1</find>
+      <find>timerButton</find>
+      <find>studying)</find>
+      <find>startStudyingButton</find>
+      <find>STUDYING</find>
+      <find>segue</find>
+      <find>openPlacePicker</find>
+      <find>placePicker</find>
+      <find>\t</find>
+      <find>currentTime:</find>
+      <find>&quot;segueTime&quot;</find>
+      <find>DEFAULTS</find>
+      <find>- 33</find>
     </findStrings>
+    <replaceStrings>
+      <replace>RingProgressView</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,13 +458,10 @@
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/AWSClass.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/Colors.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/Data.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/PlacePickerViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursDetailViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/DetailTableViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/AccountInfoTableViewController.swift" />
@@ -115,15 +476,19 @@
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Config/Constants.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Info.plist" />
-        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/MainTabBarViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/ScholarshipCommitteeTableViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/Views/DetailsViewController.swift" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/betaScholarshipStructure.json" />
         <option value="$PROJECT_DIR$/Beta_Scholarship/awsconfiguration.json" />
+        <option value="$PROJECT_DIR$/podfile" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift" />
+        <option value="$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift" />
       </list>
     </option>
   </component>
@@ -133,27 +498,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-1252" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,10 +522,22 @@
               <item name="Beta_Scholarship" type="1d218c8b:XcodeProjectNode" />
               <item name="Beta_Scholarship" type="fcab9f18:XcodeViewNode" />
             </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Beta_Scholarship" type="1d218c8b:XcodeProjectNode" />
+              <item name="Beta_Scholarship" type="fcab9f18:XcodeViewNode" />
+              <item name="Views" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,16 +564,189 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Beta_Scholarship" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Beta_Scholarship" TARGET_NAME="Beta_Scholarship" CONFIG_NAME="Debug" SCHEME_NAME="Beta_Scholarship" RUN_TARGET_PROJECT_NAME="Beta_Scholarship" RUN_TARGET_NAME="Beta_Scholarship" MAKE_ACTIVE="TRUE">
-      <envs />
+  <component name="RunManager" selected="Application.Beta_Scholarship">
+    <configuration name="AWSCognitoIdentityProvider" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AWSCognitoIdentityProvider" CONFIG_NAME="Debug" SCHEME_NAME="AWSCognitoIdentityProvider" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
     </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+    <configuration name="AWSCognitoIdentityProviderASF" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AWSCognitoIdentityProviderASF" CONFIG_NAME="Debug" SCHEME_NAME="AWSCognitoIdentityProviderASF" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AWSCore" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AWSCore" CONFIG_NAME="Debug" SCHEME_NAME="AWSCore" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AWSDynamoDB" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AWSDynamoDB" CONFIG_NAME="Debug" SCHEME_NAME="AWSDynamoDB" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AWSPinpoint" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AWSPinpoint" CONFIG_NAME="Debug" SCHEME_NAME="AWSPinpoint" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AWSS3" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="AWSS3" CONFIG_NAME="Debug" SCHEME_NAME="AWSS3" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Beta_Scholarship" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Beta_Scholarship" TARGET_NAME="Beta_Scholarship" CONFIG_NAME="Debug" SCHEME_NAME="Beta_Scholarship" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Beta_Scholarship" RUN_TARGET_NAME="Beta_Scholarship" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceKit" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="DeviceKit" CONFIG_NAME="Debug" SCHEME_NAME="DeviceKit" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EPSignature" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="EPSignature" CONFIG_NAME="Debug" SCHEME_NAME="EPSignature" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GTMOAuth2" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="GTMOAuth2" CONFIG_NAME="Debug" SCHEME_NAME="GTMOAuth2" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GTMSessionFetcher" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="GTMSessionFetcher" CONFIG_NAME="Debug" SCHEME_NAME="GTMSessionFetcher" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleAPIClientForREST" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="GoogleAPIClientForREST" CONFIG_NAME="Debug" SCHEME_NAME="GoogleAPIClientForREST" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleToolboxForMac" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="GoogleToolboxForMac" CONFIG_NAME="Debug" SCHEME_NAME="GoogleToolboxForMac" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IQKeyboardManagerSwift" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="IQKeyboardManagerSwift" CONFIG_NAME="Debug" SCHEME_NAME="IQKeyboardManagerSwift" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MKRingProgressView" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="MKRingProgressView" CONFIG_NAME="Debug" SCHEME_NAME="MKRingProgressView" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NVActivityIndicatorView" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="NVActivityIndicatorView" CONFIG_NAME="Debug" SCHEME_NAME="NVActivityIndicatorView" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pods-Beta_Scholarship" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Beta_Scholarship" CONFIG_NAME="Debug" SCHEME_NAME="Pods-Beta_Scholarship" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Realm" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Realm" CONFIG_NAME="Debug" SCHEME_NAME="Realm" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealmSwift" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RealmSwift" CONFIG_NAME="Debug" SCHEME_NAME="RealmSwift" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SWRevealViewController" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SWRevealViewController" CONFIG_NAME="Debug" SCHEME_NAME="SWRevealViewController" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Beta_Scholarship" />
+      <item itemvalue="Application.AWSCognitoIdentityProvider" />
+      <item itemvalue="Application.AWSCognitoIdentityProviderASF" />
+      <item itemvalue="Application.AWSCore" />
+      <item itemvalue="Application.AWSDynamoDB" />
+      <item itemvalue="Application.AWSPinpoint" />
+      <item itemvalue="Application.AWSS3" />
+      <item itemvalue="Application.DeviceKit" />
+      <item itemvalue="Application.EPSignature" />
+      <item itemvalue="Application.GoogleAPIClientForREST" />
+      <item itemvalue="Application.GoogleToolboxForMac" />
+      <item itemvalue="Application.GTMOAuth2" />
+      <item itemvalue="Application.GTMSessionFetcher" />
+      <item itemvalue="Application.IQKeyboardManagerSwift" />
+      <item itemvalue="Application.MKRingProgressView" />
+      <item itemvalue="Application.NVActivityIndicatorView" />
+      <item itemvalue="Application.Pods-Beta_Scholarship" />
+      <item itemvalue="Application.Realm" />
+      <item itemvalue="Application.RealmSwift" />
+      <item itemvalue="Application.SWRevealViewController" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -257,55 +798,60 @@
       <workItem from="1521275123177" duration="598000" />
       <workItem from="1521686970094" duration="5078000" />
       <workItem from="1521759835991" duration="1105000" />
+      <workItem from="1533778283213" duration="2287000" />
+      <workItem from="1534021842983" duration="3277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244248000" />
+    <option name="totallyTimeSpent" value="249812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-1252" y="-1080" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.8851563" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.11484375" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.336" sideWeight="0.640625" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16773163" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49960285" weight="0.32827586" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6373802" weight="0.32772276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4980143" weight="0.32965517" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.36261982" side_tool="true" weight="0.32772276" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.8722045" weight="0.33762378" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.45" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.11484375" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35333332" sideWeight="0.8851563" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8851563" visible="true" weight="0.35333332" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.45" weight="0.32933334" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.11484375" side_tool="true" weight="0.328" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,55 +865,11 @@
       <path value="$PROJECT_DIR$/Pods" />
     </ignored-roots>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="3" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/GradientBackgroundView.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -377,100 +879,73 @@
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/RingViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
-          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ForgotPasswordViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ResetPasswordViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
-          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/Colors.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/Data.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pods/EPSignature/Pod/Classes/EPSignatureView.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
-          <caret line="59" column="69" lean-forward="false" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+          <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/Charts/Source/Charts/Renderers/BarChartRenderer.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="398" column="0" lean-forward="false" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/Charts/Source/Charts/Renderers/BarChartRenderer.swift" />
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/PlacePickerViewController.swift" />
-    <entry file="file://$PROJECT_DIR$/Pods/Charts/Source/Charts/Charts/BarLineChartViewBase.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="69" column="75" lean-forward="false" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/DetailTableViewController.swift" />
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/GoogleSignInViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SelectClassViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="91" column="12" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="91" selection-end-column="12" />
+          <caret line="91" column="12" selection-start-line="80" selection-start-column="6" selection-end-line="91" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/RoundedTextField.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
-          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ProboLevelViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="70" column="65" lean-forward="false" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
+          <caret line="70" column="65" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -484,28 +959,28 @@
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ConfirmSignUpViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-391">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SignInViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/OnboardingViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/AppInfoViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2007">
-          <caret line="142" column="63" lean-forward="false" selection-start-line="142" selection-start-column="63" selection-end-line="142" selection-end-column="63" />
+          <caret line="142" column="63" selection-start-line="142" selection-start-column="63" selection-end-line="142" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -519,35 +994,35 @@
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyInfoViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
-          <caret line="102" column="49" lean-forward="false" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
+          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUserPool.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
-          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
-          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/LeadershipViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
-          <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="56" selection-end-column="70" />
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="56" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/AccountInfoTableViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -558,66 +1033,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="383" column="12" lean-forward="false" selection-start-line="383" selection-start-column="12" selection-end-line="383" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursDetailViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4111">
-          <caret line="291" column="49" lean-forward="false" selection-start-line="291" selection-start-column="49" selection-end-line="291" selection-end-column="49" />
+          <caret line="291" column="49" selection-start-line="291" selection-start-column="49" selection-end-line="291" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursTableView.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/AWSClass.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-431">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="16" />
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MainTabBarViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5017">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Config/Constants.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="29" />
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/ScholarshipCommitteeTableViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="177" column="31" lean-forward="false" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+          <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/MyHoursViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="359" column="8" lean-forward="false" selection-start-line="359" selection-start-column="8" selection-end-line="359" selection-end-column="73" />
+          <caret line="359" column="8" selection-start-line="359" selection-start-column="8" selection-end-line="359" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -631,29 +1088,77 @@
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/SettingsTableViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/DetailsViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2564">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="429" column="5" lean-forward="false" selection-start-line="429" selection-start-column="5" selection-end-line="429" selection-end-column="5" />
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beta_Scholarship/awsconfiguration.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/AWSCognitoIdentityUser.m">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/Charts/Source/Charts/Charts/BarLineChartViewBase.swift" />
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Base.lproj/Main.storyboard">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="1213" column="171" selection-start-line="1213" selection-start-column="171" selection-end-line="1213" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Classes/TimePerClassBarChart.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="16" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimePerClassViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/TimerViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="397" column="36" selection-start-line="397" selection-start-column="36" selection-end-line="397" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beta_Scholarship/Views/StudyHoursViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="248" column="8" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
+          <folding>
+            <element signature="e#160#172#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

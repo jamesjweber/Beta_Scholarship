@@ -172,30 +172,30 @@
 		19D694561FFE048E00D671CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				19B29D20203C083900688100 /* SignInViewController.swift */,
-				19AFA5B6203E7EC5004C6BF6 /* ForgotPasswordViewController.swift */,
-				199582D1203FC89600A3CCD1 /* ResetPasswordViewController.swift */,
-				199FACF2203FEF41006A8E81 /* MyInfoViewController.swift */,
-				19EDBE9C204137C700459F74 /* YearAndMajorViewController.swift */,
-				3906033BA965D58C2C3B74BB /* HouseStatusViewController.swift */,
-				390604D25182B3764DAA852C /* ProboLevelViewController.swift */,
-				39060279E8A49AFBB871A033 /* LeadershipViewController.swift */,
-				39060FFBAA46F504FB6D14EE /* AppInfoViewController.swift */,
-				1923EEBD204538F60098C79C /* StudyHoursViewController.swift */,
-				19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */,
-				199D0A132050F9B000422988 /* GoogleSignInViewController.swift */,
-				19DA69AA20565760007331E8 /* MyHoursViewController.swift */,
-				3906032366BD13B034039843 /* TimePerClassViewController.swift */,
-				199215F720578D4F00CE2A03 /* MyHoursTableView.swift */,
-				192DD07C2057D06D001C76E4 /* StudyHoursDetailViewController.swift */,
-				192DD07E2057ED18001C76E4 /* SelectClassViewController.swift */,
-				19A5D54D20583EE30025A792 /* OnboardingViewController.swift */,
-				19A5D552205902080025A792 /* TimerViewController.swift */,
 				19B453192059C5AE00912481 /* AccountInfoTableViewController.swift */,
+				39060FFBAA46F504FB6D14EE /* AppInfoViewController.swift */,
 				19B4531F205B2D6400912481 /* ConfirmSignUpViewController.swift */,
-				19A97202205C798D004D791C /* ScholarshipCommitteeTableViewController.swift */,
-				19C9A443205CA7B500F29DFE /* MainTabBarViewController.swift */,
 				19C9A445205CF3DC00F29DFE /* DetailsViewController.swift */,
+				19AFA5B6203E7EC5004C6BF6 /* ForgotPasswordViewController.swift */,
+				199D0A132050F9B000422988 /* GoogleSignInViewController.swift */,
+				3906033BA965D58C2C3B74BB /* HouseStatusViewController.swift */,
+				39060279E8A49AFBB871A033 /* LeadershipViewController.swift */,
+				19C9A443205CA7B500F29DFE /* MainTabBarViewController.swift */,
+				199215F720578D4F00CE2A03 /* MyHoursTableView.swift */,
+				19DA69AA20565760007331E8 /* MyHoursViewController.swift */,
+				199FACF2203FEF41006A8E81 /* MyInfoViewController.swift */,
+				19A5D54D20583EE30025A792 /* OnboardingViewController.swift */,
+				390604D25182B3764DAA852C /* ProboLevelViewController.swift */,
+				199582D1203FC89600A3CCD1 /* ResetPasswordViewController.swift */,
+				19A97202205C798D004D791C /* ScholarshipCommitteeTableViewController.swift */,
+				192DD07E2057ED18001C76E4 /* SelectClassViewController.swift */,
+				19AA41DE204FC9C80067D2D6 /* SettingsTableViewController.swift */,
+				19B29D20203C083900688100 /* SignInViewController.swift */,
+				192DD07C2057D06D001C76E4 /* StudyHoursDetailViewController.swift */,
+				1923EEBD204538F60098C79C /* StudyHoursViewController.swift */,
+				3906032366BD13B034039843 /* TimePerClassViewController.swift */,
+				19A5D552205902080025A792 /* TimerViewController.swift */,
+				19EDBE9C204137C700459F74 /* YearAndMajorViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -380,7 +380,6 @@
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/EPSignature/EPSignature.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
@@ -402,7 +401,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EPSignature.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -614,10 +612,10 @@
 				INFOPLIST_FILE = Beta_Scholarship/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.James.Beta-Theta-Pi";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.James.Beta-Study-Hours";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -633,10 +631,10 @@
 				INFOPLIST_FILE = Beta_Scholarship/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.James.Beta-Theta-Pi";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.James.Beta-Study-Hours";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

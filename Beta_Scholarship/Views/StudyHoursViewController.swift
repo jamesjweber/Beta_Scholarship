@@ -17,9 +17,9 @@ import GooglePlacePicker
 
 class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet weak var ringView1: MKRingProgressView!
-    @IBOutlet weak var ringView2: MKRingProgressView!
-    @IBOutlet weak var ringView3: MKRingProgressView!
+    @IBOutlet weak var ringView1: RingProgressView!
+    @IBOutlet weak var ringView2: RingProgressView!
+    @IBOutlet weak var ringView3: RingProgressView!
     
     @IBOutlet weak var hoursForWeek: UILabel!
     @IBOutlet weak var hoursForDay: UILabel!
@@ -27,13 +27,12 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var studyLogButton: UIButton!
     @IBOutlet weak var startStudyingButton: UIButton!
-
-    @IBOutlet weak var timerButton: UIBarButtonItem!
     
     let locationManager = CLLocationManager()
     var initialLocation:CLLocationCoordinate2D!
-    var locationName:String?
+    var locationName: String?
     var locationSet: Bool!
+    var studying: Bool!
     
     var credentialsProvider: AWSCognitoCredentialsProvider?
     var user: AWSCognitoIdentityUser?
@@ -175,12 +174,16 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func loadDefaults() {
-        let studying = defaults.object(forKey: "studying") as? Bool ?? Bool()
+        studying = defaults.object(forKey: "studying") as? Bool ?? Bool()
         print("studying: \(studying)")
-        if (!studying) {
-            timerButton.isEnabled = false
-        } else {
-            timerButton.isEnabled = true
+        
+        if (studying)
+        {
+            startStudyingButton.setTitle("Timer", for: .normal)
+        }
+        else
+        {
+            startStudyingButton.setTitle("Start Studying", for: .normal)
         }
 
         locationName = defaults.string(forKey: "locationName") as? String ?? String()
@@ -242,7 +245,7 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
         
         let cal = Calendar.current
         let day:Int = cal.ordinality(of: .day, in: .year, for: Date())!
-        let currentWeek = (day/7 - 1)
+        let currentWeek = (day/7 - 32)
         
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "MM/dd/yy"
@@ -268,12 +271,11 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func startStudying(_ sender: Any) {
-        locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             switch CLLocationManager.authorizationStatus() {
-            case .notDetermined, .restricted, .denied:
-                let alertController = UIAlertController(title: "Location Services Required",
-                                                        message: "Location services permissions were not authorized. Please enable it in Settings to start studying.",
+            case .restricted, .denied:
+                let alertController = UIAlertController(title: "Location Services Suggested",
+                                                        message: "Location services permissions were not authorized. It's highly suggested to track location to better understand study patterns.",
                                                         preferredStyle: .alert)
                 
                 let settingsAction = UIAlertAction(title: "Settings", style: .cancel) { (alertAction) in
@@ -283,12 +285,40 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
                         UIApplication.shared.open(appSettings, completionHandler: nil)
                     }
                 }
+                
+                let skip = UIAlertAction(title: "Skip", style: .default) { (alertAction) in
+                    self.performSegue(withIdentifier: "Study Hours To Class", sender: self)
+                }
+                
                 alertController.addAction(settingsAction)
+                alertController.addAction(skip)
                 
                 self.present(alertController, animated: true, completion: nil)
+                break
             case .authorizedAlways, .authorizedWhenInUse:
-                openPlacePicker()
+                locationAllowed()
+            case .notDetermined:
+                locationManager.requestWhenInUseAuthorization()
             }
+            
+        }
+    }
+        
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if (status == .denied || status == .restricted) {
+            // The user denied authorization
+            performSegue(withIdentifier: "Study Hours To Class", sender: self)
+        } else if (status == .authorizedAlways || status == .authorizedWhenInUse) {
+            // The user accepted authorization
+            locationAllowed()
+        }
+    }
+        
+    func locationAllowed() {
+        if (!studying) {
+            openPlacePicker()
+        } else {
+            performSegue(withIdentifier: "Study Hours To Timer", sender: self)
         }
     }
 
@@ -319,13 +349,23 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
                 print("sender was nil!")
             }
         } */
-        if segue.identifier == "Study Hours To Class" {
-            let selectClassViewController = segue.destination as! SelectClassViewController
-            if sender != nil {
-                selectClassViewController.place = myPlace
-                print("myPlace2: \(myPlace)")
-            } else {
-                print("sender was nil!")
+
+        if (studying!) {
+            print("STUDYING")
+            if segue.identifier == "Study Hours To Timer" {
+                let timerViewController = segue.destination as! TimerViewController
+            }
+        } else {
+            print("NOT STUDYING")
+            print(studying!)
+            if segue.identifier == "Study Hours To Class" {
+                let selectClassViewController = segue.destination as! SelectClassViewController
+                if sender != nil {
+                    selectClassViewController.place = myPlace
+                    print("myPlace2: \(myPlace)")
+                } else {
+                    print("sender was nil!")
+                }
             }
         }
     }
@@ -333,7 +373,7 @@ class StudyHoursViewController: UIViewController, CLLocationManagerDelegate {
     
 }
 
-extension MKRingProgressView { 
+extension RingProgressView {
     func animateTo(_ number : Double) {
         CATransaction.begin()
         CATransaction.setAnimationDuration(0.7)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '19D6D9705482D1B9CB1C3F1D8CC28599'
-               BlueprintName = 'EPSignature'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'EPSignature.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47482330520A6F56FDEC3A89B554F8A1"
+               BlueprintName = "EPSignature"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "EPSignature.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

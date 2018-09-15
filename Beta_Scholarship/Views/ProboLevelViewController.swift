@@ -15,7 +15,7 @@ class ProboLevelViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var bottomLabel: UILabel!
     
-    let ProboLevel:[String] = ["Not On Probo (GPA ≥2.85)","Probo 1 (2.85 > GPA ≥ 2.5)","Probo 2 (2.5 > GPA ≥ 2.0)","Probo 3 (2.0 > GPA)"]
+    let ProboLevel:[String] = ["Not On Probo (GPA ≥2.85)","Probo 1 (2.85 > GPA ≥ 2.5)","Probo 2 (2.5 > GPA ≥ 2.0)","Probo 3 (2.0 > GPA)", "Not Applicable"]
     
     var brotherProboLevel = String()
     var signInInfo: signInInformation?
@@ -104,7 +104,7 @@ class ProboLevelViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBAction func nextButtonPressed(_ sender: UIButton) {
 
         if (!proboLevelSelected) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please select your current probation level", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Missing Information", message: "Please select your current probation level. If not a member of Beta Theta Pi, select \"Not Applicable\" to continue.", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)

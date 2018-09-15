@@ -16,12 +16,12 @@ class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var pinNumber: RoundedTextField!
     
-    let BrotherStatus:[String] = ["Brother","Pledge","Neophyte"]
+    let BrotherStatus:[String] = ["Brother","Pledge","Neophyte", "Other"]
     var houseStatus = String()
     var signInInfo: signInInformation?
     var brotherStatusSelected = false
     var isNotBrother = false
-    var pinSelected = false
+    var pinEntered = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,7 +88,7 @@ class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableV
         signInInfo?.beta.pin = pinNumber.text!
         
         if (!pinNumber.isEmpty()) {
-            pinSelected = true
+            pinEntered = true
         }
     }
     
@@ -112,18 +112,18 @@ class HouseStatusViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        if ((!pinSelected && !isNotBrother) && !brotherStatusSelected) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
+        if ((!pinEntered && !isNotBrother) && !brotherStatusSelected) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please select house status. If not a member of Beta Theta Pi, select \"Other\" to continue.", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)
-        } else if (!pinSelected && !isNotBrother) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please fill out the 'PIN' field", preferredStyle: .alert)
+        } else if (!pinEntered && !isNotBrother) {
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out the 'PIN' field. This is used to identify your membership in the Beta Theta Pi fratenity.", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)
         } else if (!brotherStatusSelected) {
-            let alert = UIAlertController(title: "Missing Information", message: "Please select your house status", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Missing Information", message: "Please select your house status. If not a member of Beta Theta Pi, select \"Other\" to continue.", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)

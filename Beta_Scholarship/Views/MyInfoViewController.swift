@@ -140,23 +140,23 @@ class MyInfoViewController: UIViewController,UIImagePickerControllerDelegate, UI
     }
     
     @objc func textFieldDidChange(_ textField: RoundedTextField) {
-        if (textField.placeholder! == "First Name") {
+        if (textField.placeholder! == "* First Name") {
             signInInfo!.name.first = textField.text!
-        } else if (textField.placeholder! == "Last Name") {
+        } else if (textField.placeholder! == "* Last Name") {
             signInInfo!.name.last = textField.text!
-        } else if (textField.placeholder! == "Birthdate") {
+        } else if (textField.placeholder! == "Birthdate (opt.)") {
             signInInfo!.other.birthdate = textField.text!
-        } else if (textField.placeholder! == "Phone") {
+        } else if (textField.placeholder! == "Phone (opt.)") {
             signInInfo!.contact.phone = textField.text!
-        } else if (textField.placeholder! == "Email") {
+        } else if (textField.placeholder! == "Email (opt.)") {
             signInInfo!.contact.contactEmail = textField.text!
-        } else if (textField.placeholder! == "(Home) Street Address") {
+        } else if (textField.placeholder! == "(Home) Street Address (opt.)") {
             signInInfo!.address.street = textField.text!
-        } else if (textField.placeholder! == "City") {
+        } else if (textField.placeholder! == "City (opt.)") {
             signInInfo!.address.city = textField.text!
-        } else if (textField.placeholder! == "State") {
+        } else if (textField.placeholder! == "State (opt.)") {
             signInInfo!.address.state = textField.text!
-        } else if (textField.placeholder! == "Zip") {
+        } else if (textField.placeholder! == "Zip (opt.)") {
             signInInfo!.address.zip = textField.text!
         }
     }
@@ -183,17 +183,10 @@ class MyInfoViewController: UIViewController,UIImagePickerControllerDelegate, UI
 
     func checkTextFieldsFilled() -> Bool {
         if (!firstName.isEmpty() &&
-           !lastName.isEmpty() &&
-           !birthdate.isEmpty() &&
-           !phone.isEmpty() &&
-           !email.isEmpty() &&
-           !streetAddress.isEmpty() &&
-           !city.isEmpty() &&
-           !state.isEmpty() &&
-           !zip.isEmpty()) {
+           !lastName.isEmpty()) {
             return true
         } else {
-            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out first and last name fields.", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)
@@ -211,19 +204,19 @@ class MyInfoViewController: UIViewController,UIImagePickerControllerDelegate, UI
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
         let phoneCorrect =  phoneTest.evaluate(with: phone.text ?? "")
         
-        if (!birthdateCorrect && !phoneCorrect) {
+        if (!birthdateCorrect && !phoneCorrect && !birthdate.isEmpty() && !phone.isEmpty()) {
             let alert = UIAlertController(title: "Incorrect Formatting", message: "Please enter your birthdate in the format YYYY-MM-DD, and your phone in the format +1XXXXXXXXXX", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)
             return false
-        } else if (!birthdateCorrect) {
+        } else if (!birthdateCorrect && !birthdate.isEmpty()) {
             let alert = UIAlertController(title: "Incorrect Formatting", message: "Please enter your birthdate in the format YYYY-MM-DD", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)
             return false
-        } else if (!phoneCorrect) {
+        } else if (!phoneCorrect && !phone.isEmpty()) {
             let alert = UIAlertController(title: "Incorrect Formatting", message: "Please enter your phone in the format +1XXXXXXXXXX", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)

@@ -76,29 +76,40 @@ class SettingsTableViewController: UITableViewController, GIDSignInUIDelegate {
 
         print(indexPath.section)
         print(indexPath.row)
+        
+        
+         if (indexPath.section == 1 && indexPath.row == 0) {
+            guard let url = URL(string: "https://github.com/jamesjweber/Beta_Scholarship/blob/master/privacy_policy.md")
+                else { return }
+                UIApplication.shared.open(url)
+         }
 
-        if indexPath.section == 1 && indexPath.row == 0 {
+
+        if indexPath.section == 2 && indexPath.row == 0 {
             print("signing out")
 
             // Sign Out
-            let alert = UIAlertController(title: nil, message: "Are you sure you want to to log out?", preferredStyle: .actionSheet)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("Log Out", comment: "Default action"), style: .destructive, handler: { (action) -> Void in
-                // Sign Out
+            
+            if UIDevice.current.userInterfaceIdiom == .phone {
+                let alert = UIAlertController(title: nil, message: "Are you sure you want to to log out?", preferredStyle: .actionSheet)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Log Out", comment: "Default action"), style: .destructive, handler: { (action) -> Void in
+                    // Sign Out
+                    print("Signing out")
+                    self.user?.signOut()
+                    self.title = nil
+                    self.response = nil
+                    self.refresh()
+                }))
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Default action"), style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+            else {
                 self.user?.signOut()
                 self.title = nil
                 self.response = nil
                 self.refresh()
-            }))
-            alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Default action"), style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-
-        /*
-        if (indexPath.section == 1 && indexPath.row == 1) {
-            if (GIDSignIn.sharedInstance().currentUser == nil) {
-                GIDSignIn.sharedInstance().signIn()
             }
-        }*/
+        }
 
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
 

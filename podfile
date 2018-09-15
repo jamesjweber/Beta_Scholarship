@@ -23,7 +23,6 @@ target 'Beta_Scholarship' do
     pod 'DeviceKit'
     pod 'MKRingProgressView'
     pod 'NVActivityIndicatorView'
-    pod 'Charts'
     pod 'RealmSwift'
     post_install do |installer|
       installer.pods_project.targets.each do |target|

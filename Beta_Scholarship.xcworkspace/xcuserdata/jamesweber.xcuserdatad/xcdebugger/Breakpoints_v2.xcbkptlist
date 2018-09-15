@@ -2,4 +2,118 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beta_Scholarship/Views/StudyHoursViewController.swift"
+            timestampString = "556601016.394976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "openPlacePicker()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beta_Scholarship/Views/AppInfoViewController.swift"
+            timestampString = "556774722.652072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "handlerConfirmed()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "handlerConfirmed #1 () -&gt; () in Beta_Scholarship.AppInfoViewController.nextButtonPressed(__ObjC.UIButton) -&gt; ()"
+                  moduleName = "Beta_Scholarship"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamesweber/AppcodeProjects/Beta_Scholarship/Beta_Scholarship/Views/AppInfoViewController.swift"
+                  timestampString = "556772790.12842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in handlerConfirmed #1 () -&gt; () in Beta_Scholarship.AppInfoViewController.nextButtonPressed(__ObjC.UIButton) -&gt; ()"
+                  moduleName = "Beta_Scholarship"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamesweber/AppcodeProjects/Beta_Scholarship/Beta_Scholarship/Views/AppInfoViewController.swift"
+                  timestampString = "556772790.1325769"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beta_Scholarship/Views/AppInfoViewController.swift"
+            timestampString = "556774722.652162"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "handlerConfirmed()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in handlerConfirmed #1 () -&gt; () in Beta_Scholarship.AppInfoViewController.nextButtonPressed(__ObjC.UIButton) -&gt; ()"
+                  moduleName = "Beta_Scholarship"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamesweber/AppcodeProjects/Beta_Scholarship/Beta_Scholarship/Views/AppInfoViewController.swift"
+                  timestampString = "556772792.119218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.AWSTask&lt;__ObjC.AWSCognitoIdentityUserPoolSignUpResponse&gt;) -&gt; Swift.Optional&lt;Any&gt; in closure #1 () -&gt; () in handlerConfirmed #1 () -&gt; () in Beta_Scholarship.AppInfoViewController.nextButtonPressed(__ObjC.UIButton) -&gt; ()"
+                  moduleName = "Beta_Scholarship"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamesweber/AppcodeProjects/Beta_Scholarship/Beta_Scholarship/Views/AppInfoViewController.swift"
+                  timestampString = "556772792.1222661"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -100,6 +100,11 @@ class AppInfoViewController: UIViewController {
                         phone?.name = "phone_number"
                         phone?.value = phoneValue
                         attributes.append(phone!)
+                    } else {
+                        let attribute = AWSCognitoIdentityUserAttributeType()
+                        attribute?.name = "phone_number"
+                        attribute?.value = "N/A"
+                        attributes.append(attribute!)
                     }
                     
                     if let streetAddress = signInInfo?.address.street, let city = signInInfo?.address.city, let state = signInInfo?.address.state, let zip = signInInfo?.address.zip {
@@ -109,6 +114,11 @@ class AppInfoViewController: UIViewController {
                         address?.name = "address"
                         address?.value = addressValue
                         attributes.append(address!)
+                    } else {
+                        let attribute = AWSCognitoIdentityUserAttributeType()
+                        attribute?.name = "address"
+                        attribute?.value = "N/A"
+                        attributes.append(attribute!)
                     }
                     
                     // MARK: Custom Attribute
@@ -163,17 +173,17 @@ class AppInfoViewController: UIViewController {
 
                     let userInfoString: String = "First: \((signInInfo?.name.first!)!)\n" +
                             "Last: \((signInInfo?.name.last!)!)\n" +
-                            "Birthday: \((signInInfo?.other.birthdate!)!)\n" +
-                            "Contact Email: \((signInInfo?.contact.contactEmail!)!)\n" +
-                            "Phone: \((signInInfo?.contact.phone!)!)\n" +
-                            "Address: \((signInInfo?.address.street!)!) \((signInInfo?.address.city!)!), " +
-                            "\((signInInfo?.address.state)!) \((signInInfo?.address.zip)!)\n" +
-                            "Year: \((signInInfo?.school.year!)!)\n" +
-                            "Major: \((signInInfo?.school.major!)!)\n" +
+                            "Birthday: \((signInInfo?.other.birthdate == "" ? "N/A" : signInInfo?.other.birthdate)!)\n" +
+                            "Contact Email: \((signInInfo?.contact.contactEmail ?? "N/A")!)\n" +
+                            "Phone: \((signInInfo?.contact.phone == "" ? "N/A" : signInInfo?.contact.phone!)!)\n" +
+                            "Address: \((signInInfo?.address.street ?? "N/A")!) \((signInInfo?.address.city ?? "")!) " +
+                            "\((signInInfo?.address.state ?? "")!) \((signInInfo?.address.zip ?? "")!)\n" +
+                            "Year: \((signInInfo?.school.year ?? "N/A")!)\n" +
+                            "Major: \((signInInfo?.school.major ?? "N/A")!)\n" +
                             "Brother Status: \((signInInfo?.beta.brotherStatus!)!)\n" +
-                            "Pin Number: \((signInInfo?.beta.pin ?? "") ?? "")\n" +
-                            "Probo Level: \((signInInfo?.beta.proboLevel!)!)\n" +
-                            "House Positions: \((signInInfo?.beta.housePositions!)!)"
+                            "Pin Number: \(signInInfo?.beta.pin ?? "N/A")\n" +
+                            "Probo Level: \((signInInfo?.beta.proboLevel ?? "N/A")!)\n" +
+                            "House Positions: \((signInInfo?.beta.housePositions ?? "N/A")!)"
 
                     func handlerConfirmed () {
 
@@ -217,7 +227,7 @@ class AppInfoViewController: UIViewController {
                 }
             }
         } else {
-            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Missing Information", message: "Please fill out ALL fields. These are required to create an account.", preferredStyle: .alert)
             let Ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(Ok)
             self.present(alert, animated: true, completion: nil)
